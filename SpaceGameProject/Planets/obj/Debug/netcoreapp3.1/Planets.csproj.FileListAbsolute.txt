@@ -1,0 +1,9 @@
+C:\Users\mosel\OneDrive\Documents\MSSA C7\Group Projects\SpaceGame\SpaceGameProject\Planets\bin\Debug\netcoreapp3.1\Planets.deps.json
+C:\Users\mosel\OneDrive\Documents\MSSA C7\Group Projects\SpaceGame\SpaceGameProject\Planets\bin\Debug\netcoreapp3.1\Planets.dll
+C:\Users\mosel\OneDrive\Documents\MSSA C7\Group Projects\SpaceGame\SpaceGameProject\Planets\bin\Debug\netcoreapp3.1\Planets.pdb
+C:\Users\mosel\OneDrive\Documents\MSSA C7\Group Projects\SpaceGame\SpaceGameProject\Planets\obj\Debug\netcoreapp3.1\Planets.csprojAssemblyReference.cache
+C:\Users\mosel\OneDrive\Documents\MSSA C7\Group Projects\SpaceGame\SpaceGameProject\Planets\obj\Debug\netcoreapp3.1\Planets.AssemblyInfoInputs.cache
+C:\Users\mosel\OneDrive\Documents\MSSA C7\Group Projects\SpaceGame\SpaceGameProject\Planets\obj\Debug\netcoreapp3.1\Planets.AssemblyInfo.cs
+C:\Users\mosel\OneDrive\Documents\MSSA C7\Group Projects\SpaceGame\SpaceGameProject\Planets\obj\Debug\netcoreapp3.1\Planets.csproj.CoreCompileInputs.cache
+C:\Users\mosel\OneDrive\Documents\MSSA C7\Group Projects\SpaceGame\SpaceGameProject\Planets\obj\Debug\netcoreapp3.1\Planets.dll
+C:\Users\mosel\OneDrive\Documents\MSSA C7\Group Projects\SpaceGame\SpaceGameProject\Planets\obj\Debug\netcoreapp3.1\Planets.pdb

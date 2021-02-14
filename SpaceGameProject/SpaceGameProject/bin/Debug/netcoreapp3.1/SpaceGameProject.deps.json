@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "SpaceGameProject/1.0.0": {
+        "dependencies": {
+          "Planets": "1.0.0"
+        },
+        "runtime": {
+          "SpaceGameProject.dll": {}
+        }
+      },
+      "Planets/1.0.0": {
+        "runtime": {
+          "Planets.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SpaceGameProject/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Planets/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
