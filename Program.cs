@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Planets;
 namespace SpaceGameProject
 {
@@ -7,6 +7,8 @@ namespace SpaceGameProject
         
         static void Main(string[] args)
         {
+            bool condition = true;
+            
             Script text = new Script();
             Ship ship = new Ship();
             Game game = new Game();
@@ -22,35 +24,88 @@ namespace SpaceGameProject
             ship.Continues();
 
             //Start The Menu And begin the game Loop should start here.
-
-            text.MainMenu(ship.Fuel ,game.daysRemaining);
-            int uInput = int.Parse( Console.ReadLine());
-
-            switch (uInput)
+            do
             {
-                case 1:
-                    //Check player Inventory
-                    ship.DisplayInventory();
-                    break;
+                text.MainMenu(ship.Fuel, game.daysRemaining);
+                Console.WriteLine("What would you like to do?");
+                int uInput = int.Parse(Console.ReadLine());
 
-                case 2:
-                    ship.StoredItems();
-                    Console.WriteLine("Whould you like to store and item?\tYes/No");
-                    if (Console.ReadLine().ToLower()== "yes")
-                    {
+                switch (uInput)
+                {
+                    case 1:
+                        //Check player Inventory
+                        text.InventoryScript();
+                        ship.DisplayInventory();
 
-                    }
+                        ship.Continues();
+                        break;
 
-                    break;
+                    case 2:
+                        text.StorageScript();
+                        ship.StoredItems();
 
-                case 3:
+                        Console.WriteLine("Whould you like to store and item?\tYes/No");
+                        if (Console.ReadLine().ToLower() == "yes")
+                        {
+                            Console.WriteLine("What Slot would you like to store in?");
+                            Console.Write("Slot#:");
+                            int sSlot = int.Parse(Console.ReadLine());
 
-                    break;
+                            Console.WriteLine("What item would you like to store?");
 
-                case 0:
+                            text.InventoryScript();
+                            ship.DisplayInventory();
 
-                    break;
-            }
+                            Console.Write("Item:");
+                            int iToS = int.Parse(Console.ReadLine());
+
+                            ship.StorageAdd(sSlot-1, iToS-1);
+
+                        }
+                        else
+                        {
+                            Console.Clear();
+
+                            Console.WriteLine("Would you like to take an item out of storage? Yes/No?");
+                            if (Console.ReadLine().ToLower() == "yes")
+                            {
+                                text.InventoryScript();
+                                ship.DisplayInventory();
+                                Console.WriteLine("What Slot would you like to store in?");
+                                int iSlot = int.Parse(Console.ReadLine());
+
+                                Console.WriteLine("What stored item would you like to move to inventory?");
+
+                                text.StorageScript();
+                                ship.StoredItems();
+
+                                Console.Write("Item:");
+                                int sToI = int.Parse(Console.ReadLine());
+                                ship.InventoryAdd(iSlot - 1, sToI - 1);
+
+                            }
+                            else
+                             ship.Continues();
+                        }
+
+                        break;
+
+                    case 3:
+
+                        //Select Destination
+
+                        break;
+
+                    case 0:
+
+                        Console.WriteLine("Thanks For Playing!");
+                        condition = false;
+                        ship.Continues();
+
+                        break;
+                }
+                
+            } while (condition == true);
 
         }
     }
