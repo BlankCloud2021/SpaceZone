@@ -33,9 +33,10 @@ namespace Planets
             MaxFuel = 100;
             InventorySize = 10;
             StorageSize = 10;
+            Wallet = 1000;
 
-            int i = InventorySize;
-            ShipInventory = new Goods[i];
+            //int i = InventorySize;
+            ShipInventory = new Goods[50];
             
             //Adds to the ships Inventory one of each crystal
                  for (int I = 0; I < 5; I++)
@@ -43,8 +44,8 @@ namespace Planets
                     ShipInventory[I] = (Goods)I;
                  }
 
-            int s = StorageSize;
-            ShipStorage = new Goods[s];
+           // int s = StorageSize;
+            ShipStorage = new Goods[50];
         }
 
         //Methods
@@ -93,7 +94,7 @@ namespace Planets
         //Prints to screen the current inventory. --note Fix first item in array being Empty 
         public void DisplayInventory()
         {
-               int goods = ShipInventory.Length;
+               int goods = InventorySize;
             
                int num = 0;
             //Display The inventory Array 
@@ -125,27 +126,33 @@ namespace Planets
 
         public void InventoryAdd(int arrayPosition,int itemIn) 
         {
-            //Copys a select item to inventory and deletes it from storage.  arrayPosition is where you want to move the item to in storage
+            //Copys a select item to inventory and deletes it from storage.  arrayPosition is where you want to move the item to in Inventory
             //itemIn parameter is the item selected from storage  
-            
-            
-            if (this.ShipStorage[itemIn] == Goods.Empty)
+
+            if (arrayPosition < InventorySize)
             {
+                if (this.ShipStorage[itemIn] == Goods.Empty)
+                {
 
-                Console.WriteLine("You Havent Selected Anything");
-            }
-            else if(ShipInventory[arrayPosition] == Goods.Empty)
-            {
+                    Console.WriteLine("You Havent Selected Anything");
+                }
+                else if (ShipInventory[arrayPosition] == Goods.Empty)
+                {
 
-                ShipInventory[arrayPosition] = ShipStorage[itemIn];
+                    ShipInventory[arrayPosition] = ShipStorage[itemIn];
 
-                ShipStorage[itemIn] = Goods.Empty;
+                    ShipStorage[itemIn] = Goods.Empty;
 
-                Console.WriteLine("Item Move Succesful");
+                    Console.WriteLine("Item Move Succesful");
+                }
+                else
+                {
+                    Console.WriteLine("There is an Item here. Try SomeWhere else");
+                }
             }
             else
             {
-                Console.WriteLine("There is an Item here. Try SomeWhere else");
+                Console.WriteLine("Input out of Range");
             }
             Continues();
            
@@ -155,7 +162,7 @@ namespace Planets
         public void StoredItems()
         {
             //Print to screen items in the inventrory 
-            int goods = ShipStorage.Length;
+            int goods = StorageSize;
             int num = 0;
      
             //Display The inventoru  Array 
@@ -173,24 +180,46 @@ namespace Planets
         public void StorageAdd(int arrayPosition, int itemIn)
         {
             // Copys item to storage and deletes it from inventory.
-
-            if (this.ShipInventory[itemIn] == Goods.Empty)
+            if (arrayPosition < StorageSize)
             {
 
-                Console.WriteLine("You Havent Selected Anything");
-            }
-            else if (ShipStorage[arrayPosition] == Goods.Empty)
-            {
 
-                ShipStorage[arrayPosition] = ShipInventory[itemIn];
+                if (this.ShipInventory[itemIn] == Goods.Empty)
+                {
 
-                ShipInventory[itemIn] = Goods.Empty;
+                    Console.WriteLine("You Havent Selected Anything");
+                }
+                else if (ShipStorage[arrayPosition] == Goods.Empty)
+                {
 
+                    ShipStorage[arrayPosition] = ShipInventory[itemIn];
+
+                    ShipInventory[itemIn] = Goods.Empty;
+
+                }
+                else
+                {
+                    Console.WriteLine("There is an Item here. Try SomeWhere else");
+                }
             }
             else
             {
-                Console.WriteLine("There is an Item here. Try SomeWhere else");
+                Console.WriteLine("Input out of Range");
             }
+            Continues();
+
+        }
+        public void UpgradeStorage()
+        {
+            // Increase the max array of the inventroy by 5 each time called then subtracts the cost of the upgrade from the wallet 
+
+            bool value = WalletAltSub(300);
+            if (value == true)
+            {
+                StorageSize += 5;
+
+            }
+
             Continues();
 
         }
@@ -243,7 +272,7 @@ namespace Planets
 
         }
 
-        public void ChooseDestination()
+        public void ChooseDestination()//input 2 planets
         {
             //Takes in the destination and return the Days, and Fuel used.
         }

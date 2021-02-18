@@ -37,9 +37,8 @@ namespace Planets
         public void CheckDeath(int i)
         {
             //Takes in input and checks for all death conditions.
-            //Switch statment with all deaths.
+            //Switch statment with all deaths.3
 
-            
         }
 
         public void WinCondition()

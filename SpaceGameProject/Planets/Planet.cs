@@ -130,7 +130,7 @@ namespace Planets
             Wealth = "";
             MerchantName = "Ashton";
             MerchantType = "Scammers";
-            Goods[] MerchantInventory = new Goods[] {Goods.Gas_Crystal,Goods.Earth_Crystal };
+            Goods[] MerchantInventory = new Goods[] {Goods.Gas_Crystal,Goods.Earth_Crystal};
 
         }
     }

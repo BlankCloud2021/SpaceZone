@@ -26,7 +26,7 @@ namespace SpaceGameProject
             //Start The Menu And begin the game Loop should start here.
             do
             {
-                text.MainMenu(ship.Fuel, game.daysRemaining);
+                text.MainMenu(ship.Fuel, game.daysRemaining, ship.Wallet);
                 Console.WriteLine("What would you like to do?");
                 int uInput = int.Parse(Console.ReadLine());
 
@@ -99,28 +99,40 @@ namespace SpaceGameProject
 
                     case 4:
                         //Upgrade Station    *Put this in a Do-While loop
+                        bool upgradeExit = false;
+                        Console.Clear();
+                        do
+                        {
+                            text.UpgradeScript(ship.InventorySize, ship.StorageSize, ship.MaxFuel,ship.Wallet);
+                            Console.Write("Upgrade:");
 
-                        text.UpgradeScript(ship.InventorySize, ship.StorageSize, ship.MaxFuel);
-                        //print what you want to do
-                         switch (int.Parse(Console.ReadLine()))
-                         {
-                            case 1:
+                            switch (int.Parse(Console.ReadLine()))
+                            {
+                                case 1:
+                                    //Fuel
+                                    ship.Upgradefuel();
+                                    break;
 
-                                break;
+                                case 2:
+                                    //Storage
+                                    ship.UpgradeStorage();
+                                    break;
 
-                            case 2:
+                                case 3:
+                                    //Inventory
+                                    ship.UpgradeInventory();
+                                    break;
 
-                                break;
+                                case 0:
+                                    //Exit Upgrage Menu
+                                    Console.WriteLine("Come back any time.");
+                                    ship.Continues();
+                                    upgradeExit = true;
+                                    
+                                    break;
 
-                            case 3:
-
-                                break;
-
-                            case 0:
-
-                                break;
-                         }
-                        
+                            }
+                        } while (upgradeExit == false);
                         break;
 
                     case 0:

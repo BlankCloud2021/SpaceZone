@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mosel\\Source\\Repos\\BlankCloud2021\\SpaceZone\\SpaceGameProject\\SpaceGameProject\\SpaceGameProject.csproj",
+      "projectUniqueName": "C:\\Users\\mosel\\source\\repos\\BlankCloud2021\\SpaceZone\\SpaceGameProject\\SpaceGameProject\\SpaceGameProject.csproj",
       "projectName": "SpaceGameProject",
-      "projectPath": "C:\\Users\\mosel\\Source\\Repos\\BlankCloud2021\\SpaceZone\\SpaceGameProject\\SpaceGameProject\\SpaceGameProject.csproj",
+      "projectPath": "C:\\Users\\mosel\\source\\repos\\BlankCloud2021\\SpaceZone\\SpaceGameProject\\SpaceGameProject\\SpaceGameProject.csproj",
       "packagesPath": "C:\\Users\\mosel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mosel\\Source\\Repos\\BlankCloud2021\\SpaceZone\\SpaceGameProject\\SpaceGameProject\\obj\\",
+      "outputPath": "C:\\Users\\mosel\\source\\repos\\BlankCloud2021\\SpaceZone\\SpaceGameProject\\SpaceGameProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mosel\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,8 +53,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\mosel\\Source\\Repos\\BlankCloud2021\\SpaceZone\\SpaceGameProject\\Planets\\Planets.csproj": {
-              "projectPath": "C:\\Users\\mosel\\Source\\Repos\\BlankCloud2021\\SpaceZone\\SpaceGameProject\\Planets\\Planets.csproj"
+            "C:\\Users\\mosel\\source\\repos\\BlankCloud2021\\SpaceZone\\SpaceGameProject\\Planets\\Planets.csproj": {
+              "projectPath": "C:\\Users\\mosel\\source\\repos\\BlankCloud2021\\SpaceZone\\SpaceGameProject\\Planets\\Planets.csproj"
             }
           }
         }
