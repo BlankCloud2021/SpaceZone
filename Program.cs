@@ -96,6 +96,32 @@ namespace SpaceGameProject
 
                         break;
 
+                    case 4:
+                        //Upgrade Station    *Put this in a Do-While loop
+
+                        text.UpgradeScript(ship.InventorySize, ship.StorageSize, ship.MaxFuel);
+                        //print what you want to do
+                         switch (int.Parse(Console.ReadLine()))
+                         {
+                            case 1:
+
+                                break;
+
+                            case 2:
+
+                                break;
+
+                            case 3:
+
+                                break;
+
+                            case 0:
+
+                                break;
+                         }
+                        
+                        break;
+
                     case 0:
 
                         Console.WriteLine("Thanks For Playing!");
