@@ -7,12 +7,12 @@ C:\Users\mosel\OneDrive\Documents\MSSA C7\Group Projects\SpaceGame\SpaceGameProj
 C:\Users\mosel\OneDrive\Documents\MSSA C7\Group Projects\SpaceGame\SpaceGameProject\Planets\obj\Debug\netcoreapp3.1\Planets.csproj.CoreCompileInputs.cache
 C:\Users\mosel\OneDrive\Documents\MSSA C7\Group Projects\SpaceGame\SpaceGameProject\Planets\obj\Debug\netcoreapp3.1\Planets.dll
 C:\Users\mosel\OneDrive\Documents\MSSA C7\Group Projects\SpaceGame\SpaceGameProject\Planets\obj\Debug\netcoreapp3.1\Planets.pdb
-C:\Users\akart\Documents\GitHub\SpaceZone\SpaceGameProject\Planets\obj\Debug\netcoreapp3.1\Planets.csprojAssemblyReference.cache
-C:\Users\akart\Documents\GitHub\SpaceZone\SpaceGameProject\Planets\obj\Debug\netcoreapp3.1\Planets.AssemblyInfoInputs.cache
-C:\Users\akart\Documents\GitHub\SpaceZone\SpaceGameProject\Planets\obj\Debug\netcoreapp3.1\Planets.AssemblyInfo.cs
-C:\Users\akart\Documents\GitHub\SpaceZone\SpaceGameProject\Planets\obj\Debug\netcoreapp3.1\Planets.csproj.CoreCompileInputs.cache
-C:\Users\akart\Documents\GitHub\SpaceZone\SpaceGameProject\Planets\obj\Debug\netcoreapp3.1\Planets.dll
-C:\Users\akart\Documents\GitHub\SpaceZone\SpaceGameProject\Planets\obj\Debug\netcoreapp3.1\Planets.pdb
-C:\Users\akart\Documents\GitHub\SpaceZone\SpaceGameProject\Planets\bin\Debug\netcoreapp3.1\Planets.deps.json
-C:\Users\akart\Documents\GitHub\SpaceZone\SpaceGameProject\Planets\bin\Debug\netcoreapp3.1\Planets.dll
-C:\Users\akart\Documents\GitHub\SpaceZone\SpaceGameProject\Planets\bin\Debug\netcoreapp3.1\Planets.pdb
+C:\Users\vasqu\Source\Repos\BlankCloud2021\SpaceZone\SpaceGameProject\Planets\obj\Debug\netcoreapp3.1\Planets.csprojAssemblyReference.cache
+C:\Users\vasqu\Source\Repos\BlankCloud2021\SpaceZone\SpaceGameProject\Planets\obj\Debug\netcoreapp3.1\Planets.AssemblyInfoInputs.cache
+C:\Users\vasqu\Source\Repos\BlankCloud2021\SpaceZone\SpaceGameProject\Planets\obj\Debug\netcoreapp3.1\Planets.AssemblyInfo.cs
+C:\Users\vasqu\Source\Repos\BlankCloud2021\SpaceZone\SpaceGameProject\Planets\obj\Debug\netcoreapp3.1\Planets.csproj.CoreCompileInputs.cache
+C:\Users\vasqu\Source\Repos\BlankCloud2021\SpaceZone\SpaceGameProject\Planets\obj\Debug\netcoreapp3.1\Planets.dll
+C:\Users\vasqu\Source\Repos\BlankCloud2021\SpaceZone\SpaceGameProject\Planets\obj\Debug\netcoreapp3.1\Planets.pdb
+C:\Users\vasqu\Source\Repos\BlankCloud2021\SpaceZone\SpaceGameProject\Planets\bin\Debug\netcoreapp3.1\Planets.deps.json
+C:\Users\vasqu\Source\Repos\BlankCloud2021\SpaceZone\SpaceGameProject\Planets\bin\Debug\netcoreapp3.1\Planets.dll
+C:\Users\vasqu\Source\Repos\BlankCloud2021\SpaceZone\SpaceGameProject\Planets\bin\Debug\netcoreapp3.1\Planets.pdb
