@@ -5,8 +5,8 @@ using System.Text;
 namespace Planets
 {
     //Enum For goods 
-    public enum Goods {Empty,Earth_Crystal, Heat_Crystal, Water_Crystal, Gas_Crystal, Ice_Crystal}
-    
+    public enum Goods {Empty,Earth_Crystal, Heat_Crystal, Water_Crystal, Gas_Crystal}
+    //Test
     public class Ship
     {
         //Fields
