@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\vasqu\\.nuget\\packages\\": {}
+    "C:\\Users\\mosel\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vasqu\\Source\\Repos\\BlankCloud2021\\SpaceZone\\SpaceGameProject\\Planets\\Planets.csproj",
+      "projectUniqueName": "C:\\Users\\mosel\\Source\\Repos\\BlankCloud2021\\SpaceZone\\SpaceGameProject\\Planets\\Planets.csproj",
       "projectName": "Planets",
-      "projectPath": "C:\\Users\\vasqu\\Source\\Repos\\BlankCloud2021\\SpaceZone\\SpaceGameProject\\Planets\\Planets.csproj",
-      "packagesPath": "C:\\Users\\vasqu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vasqu\\Source\\Repos\\BlankCloud2021\\SpaceZone\\SpaceGameProject\\Planets\\obj\\",
+      "projectPath": "C:\\Users\\mosel\\Source\\Repos\\BlankCloud2021\\SpaceZone\\SpaceGameProject\\Planets\\Planets.csproj",
+      "packagesPath": "C:\\Users\\mosel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mosel\\Source\\Repos\\BlankCloud2021\\SpaceZone\\SpaceGameProject\\Planets\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\vasqu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mosel\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

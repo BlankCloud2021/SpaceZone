@@ -5,7 +5,7 @@ using System.Text;
 namespace Planets
 {
     //Enum For goods 
-    public enum Goods {Empty,Earth_Crystal, Heat_Crystal, Water_Crystal, Gas_Crystal, Ice_Crystal}
+    public enum Goods {Empty,Earth_Crystal, Heat_Crystal, Water_Crystal, Ice_Crystal, Gas_Crystal }
     //Testing push 4.5  
     //Testing  10
     //test frank
@@ -13,7 +13,6 @@ namespace Planets
     {
         //Fields
 
-        //Create inventory array for the stored items and ship inventory (use a Variable called maxArray)
         public string ShipName { get; set; }
         public int Fuel { get; set; }
         public int MaxFuel { get; set; }
@@ -39,7 +38,7 @@ namespace Planets
             ShipInventory = new Goods[i];
             
             //Adds to the ships Inventory one of each crystal
-                 for (int I = 0; I < 4; I++)
+                 for (int I = 0; I < 5; I++)
                  {
                     ShipInventory[I] = (Goods)I;
                  }

@@ -15,6 +15,8 @@ namespace Planets
         public string Wealth { get; set; }
         public string MerchantName { get; set; }
         public string MerchantType{ get; set; }
+
+        //Create array for the items that a merchant has in stock 
         public Goods[] MerchantInventory { get; set; }
 
     //Methods 
@@ -48,7 +50,7 @@ namespace Planets
             "-------------------------------------------------------";
         }
 
-        //Create array for the items that a merchant has in stock 
+       
 
 }
 
