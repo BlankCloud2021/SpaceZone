@@ -40,16 +40,47 @@ namespace SpaceGameProject
 
         public void MainMenu(int fuel = 0, int days = 0)
         {
-            Console.WriteLine("---------------------------------------");
-            Console.WriteLine("************* Main Menu ***************");
-            Console.WriteLine("---------------------------------------");
+            Console.WriteLine("-----------------------------------------------");
+            Console.WriteLine("***************** Main Menu *******************");
+            Console.WriteLine("-----------------------------------------------");
             Console.WriteLine($"Fuel Level:{fuel}        Days Remaining:{days}");
-            Console.WriteLine("---------------------------------------");
+            Console.WriteLine("-----------------------------------------------");
             Console.WriteLine("(1)\tCheck Inventory    (2)\tStore Inventory");
             Console.WriteLine();
-            Console.WriteLine("(3)\tSelect Destination (0)\tQuit");
+            Console.WriteLine("(3)\tSelect Destination (4)\tUpgrades");
+            Console.WriteLine("(0)\tQuit");
         }
-    
+        
+        public void InventoryScript()
+        {
+            Console.WriteLine("--------------------------------------------------");
+            Console.WriteLine("Items in Inventory                       Quantity ");
+            Console.WriteLine("--------------------------------------------------");
+        }
+        
+        public void StorageScript()
+        {
+            Console.WriteLine("-------------------------------------------------------");
+            Console.WriteLine("Items in Storage                               Quantity");
+            Console.WriteLine("-------------------------------------------------------");
+        }
+
+        public void UpgradeScript(int maxInventory, int maxStorage, int maxFuel)
+        {
+            Console.WriteLine("-----------------------------------------------");
+            Console.WriteLine("************** Upgrade Station ****************");
+            Console.WriteLine("-----------------------------------------------");
+            Console.WriteLine("-----------------------------------------------");
+            Console.WriteLine($"Max Fuel :{maxFuel}         Max Storage:{maxStorage}");
+            Console.WriteLine($"Max Inventory{maxInventory}");
+            Console.WriteLine("-----------------------------------------------");
+            Console.WriteLine("(1)\tUpgrade Fuel     (2)\tUpgrade Storage ");
+            Console.WriteLine();
+            Console.WriteLine("(3)\tUpgrade Inventory     (0)\tQuit");
+            
+        }
+
+    }
             /*
             Console.WriteLine("(1)\tCheck Inventory\n(2)\tStore Inventory\n(3)\tSelect Destination\n(4)\tSave\n(0)\tQuit");
             Console.WriteLine();
@@ -72,22 +103,6 @@ namespace SpaceGameProject
             Console.WriteLine("Money in your wallet: $XX");
             Console.WriteLine();
 
-            Console.WriteLine("--------------------------------------------------");
-            Console.WriteLine("Items in Inventory                      Quantity ");
-            Console.WriteLine("--------------------------------------------------");
-
-            Console.WriteLine("(1)\tEarth Crystal                             3\n(2)\tHeat Crystal                              1\n(3)\tGas Crystal                               1");
-            Console.WriteLine();
-
-            Console.WriteLine("-------------------------------------------------------");
-            Console.WriteLine("Items in Storage                             Quantity");
-            Console.WriteLine("-------------------------------------------------------");
-
-            Console.WriteLine("(1)\tHeat Crystal                              2\n(2)\tIce Crystal                               5\n(3)\tEarth Crystal                             2");
-            Console.WriteLine();
-
-            Console.WriteLine("Would you like to return home Y/N \n(This will end the day)");
-            Console.WriteLine();
 
             Console.WriteLine("10 Days remain\nDawn of the final Day");
             Console.WriteLine();
