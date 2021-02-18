@@ -6,7 +6,8 @@ namespace Planets
 {
     //Enum For goods 
     public enum Goods {Empty,Earth_Crystal, Heat_Crystal, Water_Crystal, Gas_Crystal, Ice_Crystal}
-    //Testing push 2
+    //Testing push 3
+
     public class Ship
     {
         //Fields
