@@ -5,9 +5,9 @@ using System.Text;
 namespace Planets
 {
     //Enum For goods 
-    public enum Goods {Empty,Earth_Crystal, Heat_Crystal, Water_Crystal, Gas_Crystal, Ice_Crystal}
-    //Testing push 3
-    //Testing  5
+    public enum Goods {Empty,Earth_Crystal, Heat_Crystal, Water_Crystal, Ice_Crystal, Gas_Crystal }
+    //Testing push 5
+ 
 
     public class Ship
     {
