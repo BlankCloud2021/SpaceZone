@@ -42,6 +42,11 @@ namespace Planets
             
         }
 
+        public void WinCondition()
+        {
+            //Run win game, checked at Earth
+        }
+
 
 
 

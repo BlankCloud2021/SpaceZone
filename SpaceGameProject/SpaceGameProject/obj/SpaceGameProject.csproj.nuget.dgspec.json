@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\akart\\Documents\\GitHub\\SpaceZone\\SpaceGameProject\\SpaceGameProject\\SpaceGameProject.csproj": {}
+    "C:\\Users\\mosel\\Source\\Repos\\BlankCloud2021\\SpaceZone\\SpaceGameProject\\SpaceGameProject\\SpaceGameProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\akart\\Documents\\GitHub\\SpaceZone\\SpaceGameProject\\Planets\\Planets.csproj": {
+    "C:\\Users\\mosel\\Source\\Repos\\BlankCloud2021\\SpaceZone\\SpaceGameProject\\Planets\\Planets.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\akart\\Documents\\GitHub\\SpaceZone\\SpaceGameProject\\Planets\\Planets.csproj",
+        "projectUniqueName": "C:\\Users\\mosel\\Source\\Repos\\BlankCloud2021\\SpaceZone\\SpaceGameProject\\Planets\\Planets.csproj",
         "projectName": "Planets",
-        "projectPath": "C:\\Users\\akart\\Documents\\GitHub\\SpaceZone\\SpaceGameProject\\Planets\\Planets.csproj",
-        "packagesPath": "C:\\Users\\akart\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\akart\\Documents\\GitHub\\SpaceZone\\SpaceGameProject\\Planets\\obj\\",
+        "projectPath": "C:\\Users\\mosel\\Source\\Repos\\BlankCloud2021\\SpaceZone\\SpaceGameProject\\Planets\\Planets.csproj",
+        "packagesPath": "C:\\Users\\mosel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mosel\\Source\\Repos\\BlankCloud2021\\SpaceZone\\SpaceGameProject\\Planets\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\akart\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mosel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,17 +58,17 @@
         }
       }
     },
-    "C:\\Users\\akart\\Documents\\GitHub\\SpaceZone\\SpaceGameProject\\SpaceGameProject\\SpaceGameProject.csproj": {
+    "C:\\Users\\mosel\\Source\\Repos\\BlankCloud2021\\SpaceZone\\SpaceGameProject\\SpaceGameProject\\SpaceGameProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\akart\\Documents\\GitHub\\SpaceZone\\SpaceGameProject\\SpaceGameProject\\SpaceGameProject.csproj",
+        "projectUniqueName": "C:\\Users\\mosel\\Source\\Repos\\BlankCloud2021\\SpaceZone\\SpaceGameProject\\SpaceGameProject\\SpaceGameProject.csproj",
         "projectName": "SpaceGameProject",
-        "projectPath": "C:\\Users\\akart\\Documents\\GitHub\\SpaceZone\\SpaceGameProject\\SpaceGameProject\\SpaceGameProject.csproj",
-        "packagesPath": "C:\\Users\\akart\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\akart\\Documents\\GitHub\\SpaceZone\\SpaceGameProject\\SpaceGameProject\\obj\\",
+        "projectPath": "C:\\Users\\mosel\\Source\\Repos\\BlankCloud2021\\SpaceZone\\SpaceGameProject\\SpaceGameProject\\SpaceGameProject.csproj",
+        "packagesPath": "C:\\Users\\mosel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mosel\\Source\\Repos\\BlankCloud2021\\SpaceZone\\SpaceGameProject\\SpaceGameProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\akart\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mosel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -82,8 +82,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\akart\\Documents\\GitHub\\SpaceZone\\SpaceGameProject\\Planets\\Planets.csproj": {
-                "projectPath": "C:\\Users\\akart\\Documents\\GitHub\\SpaceZone\\SpaceGameProject\\Planets\\Planets.csproj"
+              "C:\\Users\\mosel\\Source\\Repos\\BlankCloud2021\\SpaceZone\\SpaceGameProject\\Planets\\Planets.csproj": {
+                "projectPath": "C:\\Users\\mosel\\Source\\Repos\\BlankCloud2021\\SpaceZone\\SpaceGameProject\\Planets\\Planets.csproj"
               }
             }
           }
