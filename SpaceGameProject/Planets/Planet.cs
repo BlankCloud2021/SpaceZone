@@ -1,5 +1,6 @@
 ﻿using System;
 
+
 namespace Planets
 {
     public class Planet
@@ -55,14 +56,14 @@ namespace Planets
     {
         public Earth()
         {
-            planetName = "";
-            valuble = "";
+            planetName = "Earth";
+            valuble = "Earth Crystal";
             saturatedResource = "";
-            Weather = "";
+            Weather = "Clear Skies";
             Wealth = "";
-            MerchantName = "";
-            MerchantType = "";
-            Goods[] MerchantInventory = new Goods[] { };
+            MerchantName = "Ikora";
+            MerchantType = "Reliable";
+            Goods[] MerchantInventory = new Goods[] {Goods.Earth_Crystal, Goods.Water_Crystal};
 
          }
 
@@ -72,14 +73,14 @@ namespace Planets
     {
         public Pluto()
         {
-            planetName = "";
-            valuble = "";
-            saturatedResource = "";
-            Weather = "";
+            planetName = "Pluto";
+            valuble = "Heat Crystal";
+            saturatedResource = "Ice Crystal";
+            Weather = "Brisk Cold";
             Wealth = "";
-            MerchantName = "";
-            MerchantType = "";
-            Goods[] MerchantInventory = new Goods[] { };
+            MerchantName = "Zeplin";
+            MerchantType = "Modest";
+            Goods[] MerchantInventory = new Goods[] {Goods.Ice_Crystal,Goods.Heat_Crystal};
 
         }
     }
@@ -88,14 +89,14 @@ namespace Planets
     {
         public Mercury()
         {
-            planetName = "";
-            valuble = "";
-            saturatedResource = "";
-            Weather = "";
+            planetName = "Mercury";
+            valuble = "Ice Crystal";
+            saturatedResource = "Heat Crystal";
+            Weather = "Hot";
             Wealth = "";
-            MerchantName = "";
-            MerchantType = "";
-            Goods[] MerchantInventory = new Goods[] { };
+            MerchantName = "Yzelta";
+            MerchantType = "Prideful";
+            Goods[] MerchantInventory = new Goods[] {Goods.Ice_Crystal,Goods.Heat_Crystal,Goods.Earth_Crystal};
 
         }
     }
@@ -104,14 +105,14 @@ namespace Planets
     {
         public Mars()
         {
-            planetName = "";
-            valuble = "";
-            saturatedResource = "";
-            Weather = "";
+            planetName = "Mars";
+            valuble = "Water Crystal";
+            saturatedResource = "Earth Crystal";
+            Weather = "Dry";
             Wealth = "";
-            MerchantName = "";
-            MerchantType = "";
-            Goods[] MerchantInventory = new Goods[] { };
+            MerchantName = "Zephyr";
+            MerchantType = "Shady";
+            Goods[] MerchantInventory = new Goods[] {Goods.Water_Crystal,Goods.Earth_Crystal,Goods.Ice_Crystal};
 
         }
     }
@@ -120,14 +121,14 @@ namespace Planets
     {
         public Jupiter()
         {
-            planetName = "";
-            valuble = "";
-            saturatedResource = "";
-            Weather = "";
+            planetName = "Jupiter";
+            valuble = "Earth Crystal";
+            saturatedResource = "Gas Crystal";
+            Weather = "Windy";
             Wealth = "";
-            MerchantName = "";
-            MerchantType = "";
-            Goods[] MerchantInventory = new Goods[] { };
+            MerchantName = "Ashton";
+            MerchantType = "Scammers";
+            Goods[] MerchantInventory = new Goods[] {Goods.Gas_Crystal,Goods.Earth_Crystal };
 
         }
     }
