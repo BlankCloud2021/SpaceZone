@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\mosel\\.nuget\\packages\\": {}
+    "C:\\Users\\akart\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mosel\\OneDrive\\Documents\\MSSA C7\\Group Projects\\SpaceGame\\SpaceGameProject\\Planets\\Planets.csproj",
+      "projectUniqueName": "C:\\Users\\akart\\Documents\\GitHub\\SpaceZone\\SpaceGameProject\\Planets\\Planets.csproj",
       "projectName": "Planets",
-      "projectPath": "C:\\Users\\mosel\\OneDrive\\Documents\\MSSA C7\\Group Projects\\SpaceGame\\SpaceGameProject\\Planets\\Planets.csproj",
-      "packagesPath": "C:\\Users\\mosel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mosel\\OneDrive\\Documents\\MSSA C7\\Group Projects\\SpaceGame\\SpaceGameProject\\Planets\\obj\\",
+      "projectPath": "C:\\Users\\akart\\Documents\\GitHub\\SpaceZone\\SpaceGameProject\\Planets\\Planets.csproj",
+      "packagesPath": "C:\\Users\\akart\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\akart\\Documents\\GitHub\\SpaceZone\\SpaceGameProject\\Planets\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mosel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\akart\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

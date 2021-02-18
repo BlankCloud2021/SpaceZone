@@ -44,7 +44,7 @@ namespace SpaceGameProject
                         text.StorageScript();
                         ship.StoredItems();
 
-                        Console.WriteLine("Whould you like to store and item?\tYes/No");
+                        Console.WriteLine("Would you like to store an item?\tYes/No");
                         if (Console.ReadLine().ToLower() == "yes")
                         {
                             Console.WriteLine("What Slot would you like to store in?");
