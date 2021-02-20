@@ -1,5 +1,6 @@
 ﻿using System;
 using Planets;
+
 namespace SpaceGameProject
 {
     class Program
@@ -24,116 +25,143 @@ namespace SpaceGameProject
             ship.Continues();
 
             //Start The Menu And begin the game Loop should start here.
-            do
-            {
-                text.MainMenu(ship.Fuel, game.daysRemaining);
-                Console.WriteLine("What would you like to do?");
-                int uInput = int.Parse(Console.ReadLine());
-
-                switch (uInput)
+            
+                do
                 {
-                    case 1:
-                        //Check player Inventory
-                        text.InventoryScript();
-                        ship.DisplayInventory();
-
+                int uInput = 0;
+                bool x = true;
+                while (x)
+                {
+                    try
+                    {
+                        text.MainMenu(ship.Fuel, game.daysRemaining);
+                        Console.WriteLine("What would you like to do?");
+                        uInput = int.Parse(Console.ReadLine());
+                        x = false;
+                    }
+                    catch
+                    {
+                        Console.WriteLine("Please enter a valid menu option.");
                         ship.Continues();
-                        break;
-
-                    case 2:
-                        text.StorageScript();
-                        ship.StoredItems();
-
-                        Console.WriteLine("Would you like to store an item?\tYes/No");
-                        if (Console.ReadLine().ToLower() == "yes")
-                        {
-                            Console.WriteLine("What Slot would you like to store in?");
-                            Console.Write("Slot#:");
-                            int sSlot = int.Parse(Console.ReadLine());
-
-                            Console.WriteLine("What item would you like to store?");
-
+                        x = true;
+                    }
+                    
+                }
+                
+                    switch (uInput)
+                    {
+                        case 1:
+                            //Check player Inventory
                             text.InventoryScript();
                             ship.DisplayInventory();
 
-                            Console.Write("Item:");
-                            int iToS = int.Parse(Console.ReadLine());
+                            ship.Continues();
+                            break;
 
-                            ship.StorageAdd(sSlot-1, iToS-1);
-
-                        }
-                        else
+                        case 2:
+                            text.StorageScript();
+                            ship.StoredItems();
+                        try
                         {
-                            Console.Clear();
-
-                            Console.WriteLine("Would you like to take an item out of storage? Yes/No?");
+                            Console.WriteLine("Would you like to store an item?\tYes/No");
                             if (Console.ReadLine().ToLower() == "yes")
                             {
+                                Console.WriteLine("What Slot would you like to store in?");
+                                Console.Write("Slot#:");
+                                int sSlot = int.Parse(Console.ReadLine());
+
+                                Console.WriteLine("What item would you like to store?");
+
                                 text.InventoryScript();
                                 ship.DisplayInventory();
-                                Console.WriteLine("What Slot would you like to store in?");
-                                int iSlot = int.Parse(Console.ReadLine());
-
-                                Console.WriteLine("What stored item would you like to move to inventory?");
-
-                                text.StorageScript();
-                                ship.StoredItems();
 
                                 Console.Write("Item:");
-                                int sToI = int.Parse(Console.ReadLine());
-                                ship.InventoryAdd(iSlot - 1, sToI - 1);
+                                int iToS = int.Parse(Console.ReadLine());
 
+                                ship.StorageAdd(sSlot - 1, iToS - 1);
                             }
-                            else
-                             ship.Continues();
                         }
+                        catch (Exception e)
+                        {
+                            continue;
+                        }
+                            else
+                            {
+                                Console.Clear();
 
-                        break;
+                                Console.WriteLine("Would you like to take an item out of storage? Yes/No?");
+                                if (Console.ReadLine().ToLower() == "yes")
+                                {
+                                    text.InventoryScript();
+                                    ship.DisplayInventory();
+                                    Console.WriteLine("What Slot would you like to store in?");
+                                    int iSlot = int.Parse(Console.ReadLine());
 
-                    case 3:
+                                    Console.WriteLine("What stored item would you like to move to inventory?");
 
-                        //Select Destination
-                        //Game
+                                    text.StorageScript();
+                                    ship.StoredItems();
 
-                        break;
+                                    Console.Write("Item:");
+                                    int sToI = int.Parse(Console.ReadLine());
+                                    ship.InventoryAdd(iSlot - 1, sToI - 1);
 
-                    case 4:
-                        //Upgrade Station    *Put this in a Do-While loop
+                                }
+                                else
+                                    ship.Continues();
+                            }
 
-                        text.UpgradeScript(ship.InventorySize, ship.StorageSize, ship.MaxFuel);
-                        //print what you want to do
-                         switch (int.Parse(Console.ReadLine()))
-                         {
-                            case 1:
+                            break;
 
-                                break;
+                        case 3:
 
-                            case 2:
+                            //Select Destination
+                            //Game
 
-                                break;
+                            break;
 
-                            case 3:
+                        case 4:
+                            //Upgrade Station    *Put this in a Do-While loop
 
-                                break;
+                            text.UpgradeScript(ship.InventorySize, ship.StorageSize, ship.MaxFuel);
+                            //print what you want to do
+                            switch (int.Parse(Console.ReadLine()))
+                            {
+                                case 1:
 
-                            case 0:
+                                    break;
 
-                                break;
-                         }
-                        
-                        break;
+                                case 2:
 
-                    case 0:
+                                    break;
 
-                        Console.WriteLine("Thanks For Playing!");
-                        condition = false;
-                        ship.Continues();
+                                case 3:
 
-                        break;
-                }
-                
-            } while (condition == true);
+                                    break;
 
+                                case 0:
+
+                                    break;
+                            }
+
+                            break;
+
+                        case 0:
+
+                            Console.WriteLine("Thanks For Playing!");
+                            condition = false;
+                            ship.Continues();
+
+                            break;
+
+                        default:
+
+                            break;
+                    }
+
+                } 
+            while (condition == true);
+            
         }
     }
 }

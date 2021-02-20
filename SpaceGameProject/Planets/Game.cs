@@ -46,10 +46,5 @@ namespace Planets
         {
             //Run win game, checked at Earth
         }
-
-
-
-
-
     }
 }
