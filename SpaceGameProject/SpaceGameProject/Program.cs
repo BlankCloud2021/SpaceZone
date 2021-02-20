@@ -85,7 +85,7 @@ namespace SpaceGameProject
 
                             }
                             else
-                             ship.Continues();
+                            ship.Continues();
                         }
 
                         break;

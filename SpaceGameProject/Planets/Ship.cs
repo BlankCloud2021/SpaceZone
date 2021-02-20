@@ -24,6 +24,9 @@ namespace Planets
 
         public int StorageSize { get; set; }
 
+        Planets currentLocation { get; set; }
+
+        Planets destination { get; set; }
         Goods[]? ShipInventory { get; set; }
 
         Goods[]? ShipStorage { get; set; }
@@ -35,6 +38,7 @@ namespace Planets
             InventorySize = 10;
             StorageSize = 10;
             Wallet = 1000;
+            currentLocation = Planets.Earth;
 
             //int i = InventorySize;
             ShipInventory = new Goods[50];
@@ -273,9 +277,28 @@ namespace Planets
 
         }
 
-        public void ChooseDestination()//input 2 planets
+        public void ChooseDestination(Planets current, Planets destination, int days)//input 2 planets, days Dayremaning 
         {
             //Takes in the destination and return the Days, and Fuel used.
+            if (current == Planets.Earth && destination == Planets.Jupitar)
+            {
+                // Set current location to destination
+                currentLocation = destination;
+                // subract fuel based on distance between 
+                Fuel -= 10;
+                //Sub days traveled
+                days -= 100;
+
+            }
+            else if (current == Planets.Earth && destination == Planets.Mars)
+            {
+                // Set current location to destination
+                currentLocation = destination;
+                // subract fuel based on distance between 
+                Fuel -= 10;
+                //Sub days traveled
+                days -= 100;
+            }
         }
 
         public void BuyMethod()

@@ -3,6 +3,7 @@
 
 namespace Planets
 {
+    public enum Planets {Earth, Pluto, Mercury, Mars, Jupitar }
     public class Planet
     {
         

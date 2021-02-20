@@ -10,7 +10,8 @@ namespace Planets
         //Feilds
         string Username { get; set; }
 
-         public int daysRemaining { get; set; }
+        public int daysRemaining { get; set; }
+
         public Game()
             {
 
@@ -41,9 +42,16 @@ namespace Planets
 
         }
 
-        public void WinCondition()
+        public void WinCondition(Goods[] inventory, Goods[] storage)
         {
             //Run win game, checked at Earth
+            int gasCount = 0;
+
+            for()
+
+
+
+
         }
 
 
