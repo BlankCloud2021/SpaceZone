@@ -245,9 +245,37 @@ namespace Planets
 
         public void ChooseDestination()
         {
-            //Takes in the destination and return the Days, and Fuel used.
-        }
+            int destination;
+            
 
+            {
+                Console.WriteLine($" Press 1 to go to Mars");
+
+                //Takes in the destination and return the Days, and Fuel used.
+            }
+            string Earth;
+            if (destination <= 1)
+            {
+                Console.WriteLine($" Welcome to Mars you consumed 11 fuel")
+            }
+            else if (destination = 2) ;
+            {
+                Console.WriteLine($" Welcome to Mercury you consumed 9 fuel")
+            }
+            else if (destination = 3) ;
+            {
+                Console.WriteLine($" Welcome to Pluto you consumed 25 fuel")
+            }
+            else if (destination = 4) ;
+            {
+                Console.WriteLine($" Welcome to Mars you consumed 46 fuel")
+            }
+            else if (destination = 5) ;
+            {;
+                Console.WriteLine($" Welcome to Mars you consumed 11 fuel")
+            
+           
+        }
         public void BuyMethod()
         {
             // Adds items to inventory, removes money from wallet
