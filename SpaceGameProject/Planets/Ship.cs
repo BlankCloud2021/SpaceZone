@@ -5,7 +5,7 @@ using System.Text;
 namespace Planets
 {
     //Enum For goods 
-    public enum Goods {Empty,Earth_Crystal, Heat_Crystal, Water_Crystal, Ice_Crystal, Gas_Crystal }
+    public enum Goods { Empty, Earth_Crystal, Heat_Crystal, Water_Crystal, Ice_Crystal, Gas_Crystal }
     //Testing push 4.5  
     //Testing  10
     //test frank
@@ -19,8 +19,8 @@ namespace Planets
         public int MaxFuel { get; set; }
 
         public int Wallet { get; set; }
-        
-        public int InventorySize { get; set; }  
+
+        public int InventorySize { get; set; }
 
         public int StorageSize { get; set; }
 
@@ -42,14 +42,14 @@ namespace Planets
 
             //int i = InventorySize;
             ShipInventory = new Goods[50];
-            
-            //Adds to the ships Inventory one of each crystal
-                 for (int I = 0; I < 5; I++)
-                 {
-                    ShipInventory[I] = (Goods)I;
-                 }
 
-           // int s = StorageSize;
+            //Adds to the ships Inventory one of each crystal
+            for (int I = 0; I < 5; I++)
+            {
+                ShipInventory[I] = (Goods)I;
+            }
+
+            // int s = StorageSize;
             ShipStorage = new Goods[50];
         }
 
@@ -67,7 +67,7 @@ namespace Planets
         // Checks to see if enough money is in wallet to make a purchase
         public bool WalletAltSub(int cost)
         {
-          
+
 
             if (Wallet >= cost)
             {
@@ -99,17 +99,17 @@ namespace Planets
         //Prints to screen the current inventory. --note Fix first item in array being Empty 
         public void DisplayInventory()
         {
-               int goods = InventorySize;
-            
-               int num = 0;
+            int goods = InventorySize;
+
+            int num = 0;
             //Display The inventory Array 
             //First space is empty and 
-            for (int i = 0; i < goods; i++ )
+            for (int i = 0; i < goods; i++)
             {
 
-                Console.Write($"({++num})\t{ShipInventory[i]} "); 
+                Console.Write($"({++num})\t{ShipInventory[i]} ");
                 Console.WriteLine($"({++num})\t{ShipInventory[++i]} ");
-               
+
             }
         }
 
@@ -118,18 +118,18 @@ namespace Planets
         {
             // Increase the max array of the inventroy by 5 each time called then subtracts the cost of the upgrade from the wallet 
 
-             bool value = WalletAltSub(300);
-            if(value == true)
+            bool value = WalletAltSub(300);
+            if (value == true)
             {
                 InventorySize += 5;
-                
+
             }
 
             Continues();
-            
+
         }
 
-        public void InventoryAdd(int arrayPosition,int itemIn) 
+        public void InventoryAdd(int arrayPosition, int itemIn)
         {
             //Copys a select item to inventory and deletes it from storage.  arrayPosition is where you want to move the item to in Inventory
             //itemIn parameter is the item selected from storage  
@@ -160,7 +160,7 @@ namespace Planets
                 Console.WriteLine("Input out of Range");
             }
             Continues();
-           
+
         }
 
 
@@ -169,7 +169,7 @@ namespace Planets
             //Print to screen items in the inventrory 
             int goods = StorageSize;
             int num = 0;
-     
+
             //Display The inventoru  Array 
             //First space is empty and 
             for (int i = 0; i < goods; i++)
@@ -262,7 +262,7 @@ namespace Planets
             //Upgrades max fuel Statment setting fuel to increments of 100
 
             bool value = WalletAltSub(300);
-            if(value== true)
+            if (value == true)
             {
                 MaxFuel += 100;
                 Console.WriteLine($"Your Ships Max ship Capacity is now {MaxFuel} gals.");
@@ -270,20 +270,46 @@ namespace Planets
 
             Continues();
         }
-        public void PlanetTravel()
+        public void PlanetTravel(Planets current, Planets destination)
         {
             Console.WriteLine("Where Do you Wnat to Go?");
+            // menu for ship travel 
+
+            switch(int.Parse(Console.ReadLine()))
+            {
+                case 1:
 
 
+                    break;
+
+                case 2:
+
+
+                    break;
+
+                case 3:
+
+
+                    break;
+
+                case 4:
+
+
+                    break;
+
+
+            }
+
+        
         }
 
-        public void ChooseDestination(Planets current, Planets destination, int days)//input 2 planets, days Dayremaning 
-        {
-            //Takes in the destination and return the Days, and Fuel used.
+            public void ChooseDestination(Planets current, Planets destination, int days)//input 2 planets, days Dayremaning 
+            {
+                //Takes in the destination and return the Days, and Fuel used.
                 // Set current location to destination
                 // subract fuel based on distance between 
                 //Sub days traveled
-              
+
                 if (current == Planets.Earth && destination == Planets.Mars)
                 {
 
@@ -359,21 +385,23 @@ namespace Planets
 
             }
 
-        public void BuyMethod()
-        {
-            // Adds items to inventory, removes money from wallet
+            public void BuyMethod()
+            {
+                // Adds items to inventory, removes money from wallet
 
-        }
+            }
 
-        public void SellMethod()
-        {
-            // Removes item form inventory, Adds money to wallet.
-        }
-
-        
+            public void SellMethod()
+            {
+                // Removes item form inventory, Adds money to wallet.
+            }
 
 
-         
-        
+
+
     }
+
+
 }
+
+
