@@ -272,8 +272,8 @@ namespace Planets
         }
         public void PlanetTravel()
         {
+            Console.WriteLine("Where Do you Wnat to Go?");
 
-            //Grab the distance between planets and subracts Fuel
 
         }
 
