@@ -10,7 +10,8 @@ namespace Planets
         //Feilds
         string Username { get; set; }
 
-         public int daysRemaining { get; set; }
+        public int daysRemaining { get; set; }
+
         public Game()
             {
 
@@ -37,14 +38,20 @@ namespace Planets
         public void CheckDeath(int i)
         {
             //Takes in input and checks for all death conditions.
-            //Switch statment with all deaths.
+            //Switch statment with all deaths.3
 
-            
         }
 
-        public void WinCondition()
+        public void WinCondition(Goods[] inventory, Goods[] storage)
         {
             //Run win game, checked at Earth
+            int gasCount = 0;
+
+            for()
+
+
+
+
         }
 
 
