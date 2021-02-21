@@ -30,7 +30,7 @@ namespace SpaceGameProject
                 {
                 int uInput = 0;
                 bool x = true;
-                while (x)
+                while (x) 
                 {
                     try
                     {
