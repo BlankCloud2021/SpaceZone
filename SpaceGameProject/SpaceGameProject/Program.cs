@@ -154,7 +154,7 @@ namespace SpaceGameProject
 
                                             Console.Write("Choose:");
                                             int itemPlace = (int.Parse(Console.ReadLine()) - 1);
-                                            Goods input = Goods.Empty;
+                                            Goods input5 = Goods.Empty;
                                             int price = 0;
 
 
@@ -172,7 +172,7 @@ namespace SpaceGameProject
                                                     price = 100;
                                                     break;
                                             }
-                                            ship.BuyMethod(itemPlace, input, price);
+                                            ship.BuyMethod(itemPlace, input5, price);
 
                                             Console.Write("Do you want to buy anything else? Yes/No:");
                                             if(Console.ReadLine().ToLower() == "no")
@@ -187,8 +187,11 @@ namespace SpaceGameProject
                                     case 2:
                                         //Sell
                                         ship.Continues();
+                                        Console.WriteLine("What do you want to sell");
+                                        ship.DisplayInventory();
+                                        int input = (int.Parse(Console.ReadLine())-1);
 
-
+                                        ship.SellMethod(input);
                                         break;
 
                                     case 0:
@@ -222,7 +225,7 @@ namespace SpaceGameProject
 
                                             Console.Write("Choose:");
                                             int itemPlace = (int.Parse(Console.ReadLine()) - 1);
-                                            Goods input = Goods.Empty;
+                                            Goods input4 = Goods.Empty;
                                             int price = 0;
 
 
@@ -231,16 +234,16 @@ namespace SpaceGameProject
                                             switch (int.Parse(Console.ReadLine()))
                                             {
                                                 case 1:
-                                                    input = zeplin.merchantInventory[0];
+                                                    input4 = zeplin.merchantInventory[0];
                                                     price = 300;
                                                     break;
 
                                                 case 2:
-                                                    input = zeplin.merchantInventory[1];
+                                                    input4 = zeplin.merchantInventory[1];
                                                     price = 100;
                                                     break;
                                             }
-                                            ship.BuyMethod(itemPlace, input, price);
+                                            ship.BuyMethod(itemPlace, input4, price);
 
                                             Console.Write("Do you want to buy anything else? Yes/No:");
                                             if (Console.ReadLine().ToLower() == "no")
@@ -254,7 +257,12 @@ namespace SpaceGameProject
 
                                     case 2:
                                         //Sell
+                                        ship.Continues();
+                                        Console.WriteLine("What do you want to sell");
+                                        ship.DisplayInventory();
+                                        int input = (int.Parse(Console.ReadLine()) - 1);
 
+                                        ship.SellMethod(input);
                                         break;
 
                                     case 0:
@@ -287,7 +295,7 @@ namespace SpaceGameProject
 
                                             Console.Write("Choose:");
                                             int itemPlace = (int.Parse(Console.ReadLine()) - 1);
-                                            Goods input = Goods.Empty;
+                                            Goods input3 = Goods.Empty;
                                             int price = 0;
 
 
@@ -296,16 +304,16 @@ namespace SpaceGameProject
                                             switch (int.Parse(Console.ReadLine()))
                                             {
                                                 case 1:
-                                                    input = yzelta.merchantInventory[0];
+                                                    input3 = yzelta.merchantInventory[0];
                                                     price = 300;
                                                     break;
 
                                                 case 2:
-                                                    input = yzelta.merchantInventory[1];
+                                                    input3 = yzelta.merchantInventory[1];
                                                     price = 100;
                                                     break;
                                             }
-                                            ship.BuyMethod(itemPlace, input, price);
+                                            ship.BuyMethod(itemPlace, input3, price);
 
                                             Console.Write("Do you want to buy anything else? Yes/No:");
                                             if (Console.ReadLine().ToLower() == "no")
@@ -319,7 +327,12 @@ namespace SpaceGameProject
 
                                     case 2:
                                         //Sell
+                                        ship.Continues();
+                                        Console.WriteLine("What do you want to sell");
+                                        ship.DisplayInventory();
+                                        int input = (int.Parse(Console.ReadLine()) - 1);
 
+                                        ship.SellMethod(input);
                                         break;
 
                                     case 0:
@@ -352,7 +365,7 @@ namespace SpaceGameProject
 
                                             Console.Write("Choose:");
                                             int itemPlace = (int.Parse(Console.ReadLine()) - 1);
-                                            Goods input = Goods.Empty;
+                                            Goods input1 = Goods.Empty;
                                             int price = 0;
 
 
@@ -361,16 +374,16 @@ namespace SpaceGameProject
                                             switch (int.Parse(Console.ReadLine()))
                                             {
                                                 case 1:
-                                                    input = zephyr.merchantInventory[0];
+                                                    input1 = zephyr.merchantInventory[0];
                                                     price = 300;
                                                     break;
 
                                                 case 2:
-                                                    input = zephyr.merchantInventory[1];
+                                                    input1 = zephyr.merchantInventory[1];
                                                     price = 100;
                                                     break;
                                             }
-                                            ship.BuyMethod(itemPlace, input, price);
+                                            ship.BuyMethod(itemPlace, input1, price);
 
                                             Console.Write("Do you want to buy anything else? Yes/No:");
                                             if (Console.ReadLine().ToLower() == "no")
@@ -384,12 +397,17 @@ namespace SpaceGameProject
 
                                     case 2:
                                         //Sell
+                                        ship.Continues();
+                                        Console.WriteLine("What do you want to sell");
+                                        ship.DisplayInventory();
+                                        int input = (int.Parse(Console.ReadLine()) - 1);
 
+                                        ship.SellMethod(input);
                                         break;
 
                                     case 0:
                                         //Exit
-
+                                        ship.Continues();
                                         break;
                                 }
 
@@ -417,7 +435,7 @@ namespace SpaceGameProject
 
                                             Console.Write("Choose:");
                                             int itemPlace = (int.Parse(Console.ReadLine()) - 1);
-                                            Goods input = Goods.Empty;
+                                            Goods input2 = Goods.Empty;
                                             int price = 0;
 
 
@@ -426,16 +444,16 @@ namespace SpaceGameProject
                                             switch (int.Parse(Console.ReadLine()))
                                             {
                                                 case 1:
-                                                    input = ashton.merchantInventory[0];
+                                                    input2 = ashton.merchantInventory[0];
                                                     price = 300;
                                                     break;
 
                                                 case 2:
-                                                    input = ashton.merchantInventory[1];
+                                                    input2 = ashton.merchantInventory[1];
                                                     price = 100;
                                                     break;
                                             }
-                                            ship.BuyMethod(itemPlace, input, price);
+                                            ship.BuyMethod(itemPlace, input2, price);
 
                                             Console.Write("Do you want to buy anything else? Yes/No:");
                                             if (Console.ReadLine().ToLower() == "no")
@@ -449,12 +467,17 @@ namespace SpaceGameProject
 
                                     case 2:
                                         //Sell
+                                        ship.Continues();
+                                        Console.WriteLine("What do you want to sell");
+                                        ship.DisplayInventory();
+                                        int input = (int.Parse(Console.ReadLine()) - 1);
 
+                                        ship.SellMethod(input);
                                         break;
 
                                     case 0:
                                         //Exit
-
+                                        ship.Continues();
                                         break;
                                 }
 

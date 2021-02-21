@@ -506,10 +506,43 @@ namespace Planets
 
         }
 
-            public void SellMethod()
+            public void SellMethod(int itemsell, int price = 0 )
             {
-                // Removes item form inventory, Adds money to wallet.
+            // Removes item form inventory, Adds money to wallet.
 
+            Goods item = ShipInventory[itemsell];
+            if (!(item == Goods.Empty))
+            {
+
+                switch (item)
+                {
+                    case Goods.Earth_Crystal:
+                        ShipInventory[itemsell] = Goods.Empty;
+                        Wallet += 100;
+
+                        break;
+
+                    case Goods.Heat_Crystal:
+                        ShipInventory[itemsell] = Goods.Empty;
+                        Wallet += 100;
+
+                        break;
+
+
+                    case Goods.Ice_Crystal:
+                        ShipInventory[itemsell] = Goods.Empty;
+                        Wallet += 100;
+
+                        break;
+                    case Goods.Gas_Crystal:
+                        ShipInventory[itemsell] = Goods.Empty;
+                        Wallet += 100;
+
+                        break;
+
+                }
+            }
+            else { Console.WriteLine("You didnt select anything"); }
             }
 
 
