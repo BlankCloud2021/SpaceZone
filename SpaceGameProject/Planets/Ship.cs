@@ -278,72 +278,75 @@ namespace Planets
             Console.WriteLine();
 
             Console.Write("Destination:");
-
-            try
+            bool test = true;
+            do
             {
-                switch (int.Parse(Console.ReadLine()))
+
+                try
                 {
-                        
-                    case 1:
-                        if (!(current == Planets.Earth))
-                        {
-                            destination = Planets.Earth;
-                        }
-                        else { Console.WriteLine("You already on earth!"); }
-                        break;
+                    switch (int.Parse(Console.ReadLine()))
+                    {
 
-                    case 2:
-                        if (!(current == Planets.Pluto))
-                        {
-                            destination = Planets.Pluto;
-                        }
-                        else { Console.WriteLine("You already on Pluto!"); }
+                        case 1:
+                            if (!(current == Planets.Earth))
+                            {
+                                destination = Planets.Earth;
+                            }
+                            else { Console.WriteLine("You already on earth!"); }
+                            break;
 
-                        break;
+                        case 2:
+                            if (!(current == Planets.Pluto))
+                            {
+                                destination = Planets.Pluto;
+                            }
+                            else { Console.WriteLine("You already on Pluto!"); }
 
-                    case 3:
-                        if (!(current == Planets.Mercury))
-                        {
-                            destination = Planets.Mercury;
-                        }
-                        else { Console.WriteLine("You already on Mercury!"); }
+                            break;
 
-                        break;
+                        case 3:
+                            if (!(current == Planets.Mercury))
+                            {
+                                destination = Planets.Mercury;
+                            }
+                            else { Console.WriteLine("You already on Mercury!"); }
 
-                    case 4:
-                        if (!(current == Planets.Mars))
-                        {
-                            destination = Planets.Mars;
-                        }
-                        else { Console.WriteLine("You already on Mars!"); }
+                            break;
 
-                        break;
+                        case 4:
+                            if (!(current == Planets.Mars))
+                            {
+                                destination = Planets.Mars;
+                            }
+                            else { Console.WriteLine("You already on Mars!"); }
 
-                    case 5:
-                        if (!(current == Planets.Jupitar))
-                        {
-                            destination = Planets.Jupitar;
-                        }
-                        else { Console.WriteLine("You already on Jupitar!"); }
+                            break;
 
-                        break;
+                        case 5:
+                            if (!(current == Planets.Jupitar))
+                            {
+                                destination = Planets.Jupitar;
+                            }
+                            else { Console.WriteLine("You already on Jupitar!"); }
 
-                    case 0:
+                            break;
 
-                        Console.WriteLine("Returning to Main Menu");
-                        Continues();
+                        case 0:
 
-                        break;
+                            Console.WriteLine("Returning to Main Menu");
+                            Continues();
 
-
+                            break;
+    
+                    }
+                    test = false;
                 }
-            }
-            catch
-            {
-                Console.WriteLine("Enter a valid option.");
-                continue;
-            }
-        
+                catch
+                {
+                    Console.WriteLine("Enter a valid option.");
+                    continue;
+                }
+            } while (test);
         }
 
             public void ChooseDestination(Planets current, Planets destination, int days)//input 2 planets, days Dayremaning 
