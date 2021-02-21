@@ -492,15 +492,24 @@ namespace Planets
             return days;
         }
 
-            public void BuyMethod()
+            public void BuyMethod(int inventoryPlace, Goods itemBuy, int price)
             {
-                // Adds items to inventory, removes money from wallet
-
+            // Adds items to inventory, removes money from wallet
+            bool value = WalletAltSub(price);
+            if (value == true)
+            {
+                this.ShipInventory[inventoryPlace] = itemBuy;
+                Console.WriteLine("Item has been added to your inventory");
             }
+
+            Continues();
+
+        }
 
             public void SellMethod()
             {
                 // Removes item form inventory, Adds money to wallet.
+
             }
 
 
