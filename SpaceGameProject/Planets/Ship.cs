@@ -27,9 +27,9 @@ namespace Planets
         public Planets currentLocation { get; set; }
 
         public Planets destination { get; set; }
-        Goods[]? ShipInventory { get; set; }
+       public Goods[]? ShipInventory { get; set; }
 
-        Goods[]? ShipStorage { get; set; }
+        public Goods[]? ShipStorage { get; set; }
         public Ship()
         {
             ShipName = "S.S Salty";

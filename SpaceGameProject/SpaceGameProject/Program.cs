@@ -540,6 +540,9 @@ namespace SpaceGameProject
 
                         break;
                 }
+                game.CheckDeath(ship.ShipInventory,ship.ShipStorage,ship.destination, game.daysRemaining, ship.Fuel);
+                game.WinCondition(ship.ShipInventory, ship.ShipStorage);
+
                 
             } while (condition == true);
 
