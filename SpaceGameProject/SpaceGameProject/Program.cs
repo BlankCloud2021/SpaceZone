@@ -126,35 +126,142 @@ namespace SpaceGameProject
                         //Select Destination
                         //Game
                         text.PlanetMenu(ship.Fuel, game.daysRemaining);
+                       
                         ship.PlanetTravel(ship.currentLocation,ship.destination);
+                       
+                        game.daysRemaining = ship.ChooseDestination(ship.currentLocation, ship.destination, game.daysRemaining);
+                       
                         switch (ship.destination)
                         {
                             case Planets.Planets.Earth:
+                                ikora.Stock();
+                                Console.WriteLine(ikora.Merchantwelcome());
+                                
+                                Console.Write("Choose:");
+                                switch (int.Parse(Console.ReadLine()))
+                                {
+                                    case 1:
+                                        //Buy
 
+                                        break;
 
+                                    case 2:
+                                        //Sell
+
+                                        break;
+
+                                    case 0:
+                                        //Exit
+
+                                        break;
+                                }
+
+                                ship.Continues();
                                 break;
 
                             case Planets.Planets.Pluto:
+                                zeplin.Stock();
+                                Console.WriteLine(zeplin.Merchantwelcome());
 
+                                Console.Write("Choose:");
+                                switch (int.Parse(Console.ReadLine()))
+                                {
+                                    case 1:
+                                        //Buy
 
+                                        break;
+
+                                    case 2:
+                                        //Sell
+
+                                        break;
+
+                                    case 0:
+                                        //Exit
+
+                                        break;
+                                }
+
+                                ship.Continues();
                                 break;
 
                             case Planets.Planets.Mercury:
+                                yzelta.Stock();
+                                Console.WriteLine(yzelta.Merchantwelcome());
 
+                                Console.Write("Choose:");
+                                switch (int.Parse(Console.ReadLine()))
+                                {
+                                    case 1:
+                                        //Buy
 
+                                        break;
+
+                                    case 2:
+                                        //Sell
+
+                                        break;
+
+                                    case 0:
+                                        //Exit
+
+                                        break;
+                                }
+
+                                ship.Continues();
                                 break;
 
                             case Planets.Planets.Mars:
+                                zephyr.Stock();
+                                Console.WriteLine(zephyr.Merchantwelcome());
 
+                                Console.Write("Choose:");
+                                switch (int.Parse(Console.ReadLine()))
+                                {
+                                    case 1:
+                                        //Buy
 
+                                        break;
+
+                                    case 2:
+                                        //Sell
+
+                                        break;
+
+                                    case 0:
+                                        //Exit
+
+                                        break;
+                                }
+
+                                ship.Continues();
                                 break;
-
 
                             case Planets.Planets.Jupitar:
+                                ashton.Stock();
+                                Console.WriteLine(ashton.Merchantwelcome());
 
+                                Console.Write("Choose:");
+                                switch (int.Parse(Console.ReadLine()))
+                                {
+                                    case 1:
+                                        //Buy
 
+                                        break;
+
+                                    case 2:
+                                        //Sell
+
+                                        break;
+
+                                    case 0:
+                                        //Exit
+
+                                        break;
+                                }
+
+                                ship.Continues();
                                 break;
-
                         }
 
                         break;

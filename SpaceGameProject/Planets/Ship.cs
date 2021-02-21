@@ -290,7 +290,7 @@ namespace Planets
                         case 1:
                             if (!(current == Planets.Earth))
                             {
-                                destination = Planets.Earth;
+                               this.destination  = Planets.Earth;
                             }
                             else { Console.WriteLine("You already on earth!"); }
                             break;
@@ -298,7 +298,7 @@ namespace Planets
                         case 2:
                             if (!(current == Planets.Pluto))
                             {
-                                destination = Planets.Pluto;
+                               this.destination = Planets.Pluto;
                             }
                             else { Console.WriteLine("You already on Pluto!"); }
 
@@ -307,7 +307,7 @@ namespace Planets
                         case 3:
                             if (!(current == Planets.Mercury))
                             {
-                                destination = Planets.Mercury;
+                                this.destination = Planets.Mercury;
                             }
                             else { Console.WriteLine("You already on Mercury!"); }
 
@@ -316,7 +316,7 @@ namespace Planets
                         case 4:
                             if (!(current == Planets.Mars))
                             {
-                                destination = Planets.Mars;
+                                this.destination = Planets.Mars;
                             }
                             else { Console.WriteLine("You already on Mars!"); }
 
@@ -325,7 +325,7 @@ namespace Planets
                         case 5:
                             if (!(current == Planets.Jupitar))
                             {
-                                destination = Planets.Jupitar;
+                                this.destination = Planets.Jupitar;
                             }
                             else { Console.WriteLine("You already on Jupitar!"); }
 
@@ -351,13 +351,14 @@ namespace Planets
 
         }
 
-            public void ChooseDestination(Planets current, Planets destination, int days)//input 2 planets, days Dayremaning 
+            public int ChooseDestination(Planets current, Planets destination, int days)//input 2 planets, Change the math for cases
             {
                 //Takes in the destination and return the Days, and Fuel used.
                 // Set current location to destination
                 // subract fuel based on distance between 
                 //Sub days traveled
 
+            //Earth
                 if (current == Planets.Earth && destination == Planets.Mars)
                 {
 
@@ -365,6 +366,7 @@ namespace Planets
                     Fuel -= 11;
                     days -= 100;
                     Console.WriteLine(" Welcome to Mars, you consumed 11 Fuel and spent 1 day traveling.");
+
                 }
                 else if (current == Planets.Earth && destination == Planets.Mercury)
                 {
@@ -387,7 +389,17 @@ namespace Planets
                     days -= 300;
                     Console.WriteLine(" Welcome to Jupiter, you consumed 45 Fuel and spent 3 days traveling.");
                 }
-                else if (current == Planets.Mercury && destination == Planets.Mars)
+            // Mercury
+            
+                else if (current == Planets.Mercury && destination == Planets.Earth)
+                {
+                currentLocation = destination;
+                Fuel -= 20;
+                days -= 100;
+                Console.WriteLine(" Welcome to Earth, you consumed 20 Fuel and spent 1 day traveling.");
+                }
+
+                 else if (current == Planets.Mercury && destination == Planets.Mars)
                 {
                     currentLocation = destination;
                     Fuel -= 20;
@@ -409,7 +421,26 @@ namespace Planets
                     days -= 400;
                     Console.WriteLine(" Welcome to Jupiter, you consumed 54 Fuel and spent 4 days traveling.");
                 }
-                else if (current == Planets.Mars && destination == Planets.Pluto)
+            //Mars
+
+            else if (current == Planets.Mars && destination == Planets.Earth)
+            {
+                currentLocation = destination;
+                Fuel -= 14;
+                days -= 200;
+                Console.WriteLine(" Welcome to Pulto, you consumed 14 Fuel and spent 2 days traveling.");
+            }
+
+            else if (current == Planets.Mars && destination == Planets.Mercury)
+            {
+                currentLocation = destination;
+                Fuel -= 14;
+                days -= 200;
+                Console.WriteLine(" Welcome to Pulto, you consumed 14 Fuel and spent 2 days traveling.");
+            }
+
+
+            else if (current == Planets.Mars && destination == Planets.Pluto)
                 {
                     currentLocation = destination;
                     Fuel -= 14;
@@ -423,6 +454,9 @@ namespace Planets
                     days -= 300;
                     Console.WriteLine(" Welcome to Jupiter, you consumed 34 Fuel and spent 3 days traveling.");
                 }
+
+
+                //Pluto
                 else if (current == Planets.Pluto && destination == Planets.Jupitar)
                 {
                     currentLocation = destination;
@@ -431,7 +465,32 @@ namespace Planets
                     Console.WriteLine(" Welcome to Jupiter, you consumed  10 Fuel and spent 20 days traveling.");
                 }
 
+            else if (current == Planets.Pluto && destination == Planets.Earth)
+            {
+                currentLocation = destination;
+                Fuel -= 10;
+                days -= 200;
+                Console.WriteLine(" Welcome to Jupiter, you consumed  10 Fuel and spent 20 days traveling.");
             }
+
+            else if (current == Planets.Pluto && destination == Planets.Mars)
+            {
+                currentLocation = destination;
+                Fuel -= 10;
+                days -= 200;
+                Console.WriteLine(" Welcome to Jupiter, you consumed  10 Fuel and spent 20 days traveling.");
+            }
+
+            else if (current == Planets.Pluto && destination == Planets.Mercury)
+            {
+                currentLocation = destination;
+                Fuel -= 10;
+                days -= 200;
+                Console.WriteLine(" Welcome to Jupiter, you consumed  10 Fuel and spent 20 days traveling.");
+            }
+
+            return days;
+        }
 
             public void BuyMethod()
             {
