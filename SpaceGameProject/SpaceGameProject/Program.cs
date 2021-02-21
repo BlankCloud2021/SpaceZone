@@ -5,6 +5,7 @@ namespace SpaceGameProject
     class Program
     {
         // t
+        //test
         static void Main(string[] args)
         {
             bool condition = true;
