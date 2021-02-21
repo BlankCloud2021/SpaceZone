@@ -129,34 +129,41 @@ namespace SpaceGameProject
                         Console.Clear();
                         do
                         {
+                            
                             text.UpgradeScript(ship.InventorySize, ship.StorageSize, ship.MaxFuel,ship.Wallet);
                             Console.Write("Upgrade:");
-
-                            switch (int.Parse(Console.ReadLine()))
+                            try
                             {
-                                case 1:
-                                    //Fuel
-                                    ship.Upgradefuel();
-                                    break;
+                                switch (int.Parse(Console.ReadLine()))
+                                {
+                                    case 1:
+                                        //Fuel
+                                        ship.Upgradefuel();
+                                        break;
 
-                                case 2:
-                                    //Storage
-                                    ship.UpgradeStorage();
-                                    break;
+                                    case 2:
+                                        //Storage
+                                        ship.UpgradeStorage();
+                                        break;
 
-                                case 3:
-                                    //Inventory
-                                    ship.UpgradeInventory();
-                                    break;
+                                    case 3:
+                                        //Inventory
+                                        ship.UpgradeInventory();
+                                        break;
 
-                                case 0:
-                                    //Exit Upgrage Menu
-                                    Console.WriteLine("Come back any time.");
-                                    ship.Continues();
-                                    upgradeExit = true;
-                                    
-                                    break;
+                                    case 0:
+                                        //Exit Upgrage Menu
+                                        Console.WriteLine("Come back any time.");
+                                        ship.Continues();
+                                        upgradeExit = true;
 
+                                        break;
+                                }
+                            }
+                            catch
+                            {
+                                Console.WriteLine("Enter a valid option");
+                                continue;
                             }
                         } while (upgradeExit == false);
                         break;
