@@ -23,23 +23,7 @@ namespace Planets
     //Methods 
         
         
-        //Print to the screen Merchants Inventory 
-        public void Stock()
-        {
-            // Displays to the screen the inventory ad prices for merchant  
-            int goods = MerchantInventory.Length;
-
-            int num = 0;
-            //Display The inventory Array 
-            
-            for (int i = 0; i < goods; i++)
-            {
-
-                Console.Write($"({++num})\t{MerchantInventory[i]} ");
-                Console.WriteLine($"({++num})\t{MerchantInventory[++i]} ");
-
-            }
-        }
+       
 
         // Returns welcome message for the planet.
         public string Merchantwelcome()
@@ -66,10 +50,27 @@ namespace Planets
             Wealth = "";
             MerchantName = "Ikora";
             MerchantType = "Reliable";
-            Goods[] MerchantInventory = new Goods[] {Goods.Earth_Crystal, Goods.Water_Crystal};
-
+            
          }
+        Goods[] merchantInventory = new Goods[] { Goods.Earth_Crystal, Goods.Water_Crystal };
 
+        //Print to the screen Merchants Inventory 
+        public void Stock()
+        {
+            // Displays to the screen the inventory ad prices for merchant  
+            int goods = merchantInventory.Length;
+
+            int num = 0;
+            //Display The inventory Array 
+
+            for (int i = 0; i < goods; i++)
+            {
+
+                Console.Write($"({++num})\t{merchantInventory[i]} ");
+                Console.WriteLine($"({++num})\t{merchantInventory[++i]} ");
+
+            }
+        }
     }
 
     public class Pluto : Planet
@@ -83,8 +84,26 @@ namespace Planets
             Wealth = "";
             MerchantName = "Zeplin";
             MerchantType = "Modest";
-            Goods[] MerchantInventory = new Goods[] {Goods.Ice_Crystal,Goods.Heat_Crystal};
+            
 
+        }
+        public Goods[] merchantInventory = new Goods[2] { Goods.Ice_Crystal, Goods.Heat_Crystal };
+        //Print to the screen Merchants Inventory 
+        public void Stock()
+        {
+            // Displays to the screen the inventory ad prices for merchant  
+            int goods = merchantInventory.Length;
+
+            int num = 0;
+            //Display The inventory Array 
+
+            for (int i = 0; i < goods; i++)
+            {
+
+                Console.Write($"({++num})\t{merchantInventory[i]} ");
+                Console.WriteLine($"({++num})\t{merchantInventory[++i]} ");
+
+            }
         }
     }
 
@@ -99,8 +118,27 @@ namespace Planets
             Wealth = "";
             MerchantName = "Yzelta";
             MerchantType = "Prideful";
-            Goods[] MerchantInventory = new Goods[] {Goods.Ice_Crystal,Goods.Heat_Crystal,Goods.Earth_Crystal};
+            
 
+        }
+
+        Goods[] merchantInventory = new Goods[] { Goods.Ice_Crystal, Goods.Heat_Crystal, Goods.Earth_Crystal };
+        //Print to the screen Merchants Inventory 
+        public void Stock()
+        {
+            // Displays to the screen the inventory ad prices for merchant  
+            int goods = merchantInventory.Length;
+
+            int num = 0;
+            //Display The inventory Array 
+
+            for (int i = 0; i < goods; i++)
+            {
+
+                Console.Write($"({++num})\t{merchantInventory[i]} ");
+                Console.WriteLine($"({++num})\t{merchantInventory[++i]} ");
+
+            }
         }
     }
 
@@ -115,8 +153,26 @@ namespace Planets
             Wealth = "";
             MerchantName = "Zephyr";
             MerchantType = "Shady";
-            Goods[] MerchantInventory = new Goods[] {Goods.Water_Crystal,Goods.Earth_Crystal,Goods.Ice_Crystal};
+            
+        }
 
+        Goods[] merchantInventory = new Goods[] { Goods.Water_Crystal, Goods.Earth_Crystal, Goods.Ice_Crystal };
+        //Print to the screen Merchants Inventory 
+        public void Stock()
+        {
+            // Displays to the screen the inventory ad prices for merchant  
+            int goods = merchantInventory.Length;
+
+            int num = 0;
+            //Display The inventory Array 
+
+            for (int i = 0; i < goods; i++)
+            {
+
+                Console.Write($"({++num})\t{merchantInventory[i]} ");
+                Console.WriteLine($"({++num})\t{merchantInventory[++i]} ");
+
+            }
         }
     }
 
@@ -133,6 +189,25 @@ namespace Planets
             MerchantType = "Scammers";
             Goods[] MerchantInventory = new Goods[] {Goods.Gas_Crystal,Goods.Earth_Crystal};
 
+        }
+
+        Goods[] merchantInventory = new Goods[] { Goods.Gas_Crystal, Goods.Earth_Crystal };
+        //Print to the screen Merchants Inventory 
+        public void Stock()
+        {
+            // Displays to the screen the inventory ad prices for merchant  
+            int goods = merchantInventory.Length;
+
+            int num = 0;
+            //Display The inventory Array 
+
+            for (int i = 0; i < goods; i++)
+            {
+
+                Console.Write($"({++num})\t{merchantInventory[i]} ");
+                Console.WriteLine($"({++num})\t{merchantInventory[++i]} ");
+
+            }
         }
     }
 }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vasqu\\Source\\Repos\\BlankCloud2021\\SpaceZone\\SpaceGameProject\\Planets\\Planets.csproj": {}
+    "C:\\Users\\mosel\\Source\\Repos\\BlankCloud2021\\SpaceZone\\SpaceGameProject\\Planets\\Planets.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vasqu\\Source\\Repos\\BlankCloud2021\\SpaceZone\\SpaceGameProject\\Planets\\Planets.csproj": {
+    "C:\\Users\\mosel\\Source\\Repos\\BlankCloud2021\\SpaceZone\\SpaceGameProject\\Planets\\Planets.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vasqu\\Source\\Repos\\BlankCloud2021\\SpaceZone\\SpaceGameProject\\Planets\\Planets.csproj",
+        "projectUniqueName": "C:\\Users\\mosel\\Source\\Repos\\BlankCloud2021\\SpaceZone\\SpaceGameProject\\Planets\\Planets.csproj",
         "projectName": "Planets",
-        "projectPath": "C:\\Users\\vasqu\\Source\\Repos\\BlankCloud2021\\SpaceZone\\SpaceGameProject\\Planets\\Planets.csproj",
-        "packagesPath": "C:\\Users\\vasqu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vasqu\\Source\\Repos\\BlankCloud2021\\SpaceZone\\SpaceGameProject\\Planets\\obj\\",
+        "projectPath": "C:\\Users\\mosel\\Source\\Repos\\BlankCloud2021\\SpaceZone\\SpaceGameProject\\Planets\\Planets.csproj",
+        "packagesPath": "C:\\Users\\mosel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mosel\\Source\\Repos\\BlankCloud2021\\SpaceZone\\SpaceGameProject\\Planets\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\vasqu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mosel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
