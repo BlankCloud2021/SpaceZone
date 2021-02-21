@@ -24,9 +24,9 @@ namespace Planets
 
         public int StorageSize { get; set; }
 
-        Planets currentLocation { get; set; }
+        public Planets currentLocation { get; set; }
 
-        Planets destination { get; set; }
+        public Planets destination { get; set; }
         Goods[]? ShipInventory { get; set; }
 
         Goods[]? ShipStorage { get; set; }
@@ -346,7 +346,9 @@ namespace Planets
                     Console.WriteLine("Enter a valid option.");
                     continue;
                 }
+
             } while (test);
+
         }
 
             public void ChooseDestination(Planets current, Planets destination, int days)//input 2 planets, days Dayremaning 

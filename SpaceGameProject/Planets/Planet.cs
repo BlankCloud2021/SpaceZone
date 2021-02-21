@@ -19,7 +19,7 @@ namespace Planets
 
         //Create array for the items that a merchant has in stock 
         public Goods[] MerchantInventory { get; set; }
-
+        
     //Methods 
         
         

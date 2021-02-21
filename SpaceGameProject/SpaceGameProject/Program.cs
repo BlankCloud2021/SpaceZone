@@ -4,8 +4,7 @@ namespace SpaceGameProject
 {
     class Program
     {
-        // t
-        //test
+        
         static void Main(string[] args)
         {
             bool condition = true;
@@ -13,6 +12,12 @@ namespace SpaceGameProject
             Script text = new Script();
             Ship ship = new Ship();
             Game game = new Game();
+            Earth ikora = new Earth();
+            Pluto zeplin = new Pluto();
+            Mercury yzelta = new Mercury();
+            Mars zephyr = new Mars();
+            Jupiter ashton = new Jupiter();
+
 
             //Main Menu
             //Welcomes player to adventure explains the rules And accpet a name for there ship.
@@ -120,6 +125,37 @@ namespace SpaceGameProject
 
                         //Select Destination
                         //Game
+                        text.PlanetMenu(ship.Fuel, game.daysRemaining);
+                        ship.PlanetTravel(ship.currentLocation,ship.destination);
+                        switch (ship.destination)
+                        {
+                            case Planets.Planets.Earth:
+
+
+                                break;
+
+                            case Planets.Planets.Pluto:
+
+
+                                break;
+
+                            case Planets.Planets.Mercury:
+
+
+                                break;
+
+                            case Planets.Planets.Mars:
+
+
+                                break;
+
+
+                            case Planets.Planets.Jupitar:
+
+
+                                break;
+
+                        }
 
                         break;
 
