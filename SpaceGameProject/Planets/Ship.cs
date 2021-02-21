@@ -274,32 +274,39 @@ namespace Planets
         {
             Console.WriteLine("Where Do you Wnat to Go?");
             // menu for ship travel 
-
-            switch(int.Parse(Console.ReadLine()))
+            
+            try
             {
-                case 1:
+                switch (int.Parse(Console.ReadLine()))
+                {
+                    case 1:
 
 
-                    break;
+                        break;
 
-                case 2:
-
-
-                    break;
-
-                case 3:
+                    case 2:
 
 
-                    break;
+                        break;
 
-                case 4:
-
-
-                    break;
+                    case 3:
 
 
+                        break;
+
+                    case 4:
+
+
+                        break;
+
+
+                }
             }
-
+            catch
+            {
+                Console.WriteLine("Enter a valid option.");
+                continue;
+            }
         
         }
 
