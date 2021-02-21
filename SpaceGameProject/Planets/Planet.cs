@@ -52,11 +52,15 @@ namespace Planets
             MerchantType = "Reliable";
             
          }
-        Goods[] merchantInventory = new Goods[] { Goods.Earth_Crystal, Goods.Water_Crystal };
+        public Goods[] merchantInventory = new Goods[] { Goods.Earth_Crystal, Goods.Water_Crystal };
 
         //Print to the screen Merchants Inventory 
         public void Stock()
         {
+            Console.WriteLine("--------------------------------------------------");
+            Console.WriteLine("Items For Sale                        ");
+            Console.WriteLine("--------------------------------------------------");
+
             // Displays to the screen the inventory ad prices for merchant  
             int goods = merchantInventory.Length;
 
@@ -91,6 +95,10 @@ namespace Planets
         //Print to the screen Merchants Inventory 
         public void Stock()
         {
+            Console.WriteLine("--------------------------------------------------");
+            Console.WriteLine("Items For Sale                        ");
+            Console.WriteLine("--------------------------------------------------");
+
             // Displays to the screen the inventory ad prices for merchant  
             int goods = merchantInventory.Length;
 
@@ -126,6 +134,10 @@ namespace Planets
         //Print to the screen Merchants Inventory 
         public void Stock()
         {
+            Console.WriteLine("--------------------------------------------------");
+            Console.WriteLine("Items For Sale                        ");
+            Console.WriteLine("--------------------------------------------------");
+
             // Displays to the screen the inventory ad prices for merchant  
             int goods = merchantInventory.Length;
 
@@ -160,6 +172,10 @@ namespace Planets
         //Print to the screen Merchants Inventory 
         public void Stock()
         {
+            Console.WriteLine("--------------------------------------------------");
+            Console.WriteLine("Items For Sale                        ");
+            Console.WriteLine("--------------------------------------------------");
+
             // Displays to the screen the inventory ad prices for merchant  
             int goods = merchantInventory.Length;
 
@@ -195,6 +211,10 @@ namespace Planets
         //Print to the screen Merchants Inventory 
         public void Stock()
         {
+            Console.WriteLine("--------------------------------------------------");
+            Console.WriteLine("Items For Sale                        ");
+            Console.WriteLine("--------------------------------------------------");
+
             // Displays to the screen the inventory ad prices for merchant  
             int goods = merchantInventory.Length;
 
