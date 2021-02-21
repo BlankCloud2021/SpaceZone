@@ -210,7 +210,46 @@ namespace SpaceGameProject
                                 {
                                     case 1:
                                         //Buy
+                                        bool check = true;
+                                        do
+                                        {
+                                            ship.Continues();
 
+                                            Console.WriteLine("Where do you want to place the item you buy");
+                                            ship.DisplayInventory();
+
+                                            zeplin.Stock();
+
+                                            Console.Write("Choose:");
+                                            int itemPlace = (int.Parse(Console.ReadLine()) - 1);
+                                            Goods input = Goods.Empty;
+                                            int price = 0;
+
+
+                                            Console.WriteLine("What Item would you like to buy?");
+
+                                            switch (int.Parse(Console.ReadLine()))
+                                            {
+                                                case 1:
+                                                    input = zeplin.merchantInventory[0];
+                                                    price = 300;
+                                                    break;
+
+                                                case 2:
+                                                    input = zeplin.merchantInventory[1];
+                                                    price = 100;
+                                                    break;
+                                            }
+                                            ship.BuyMethod(itemPlace, input, price);
+
+                                            Console.Write("Do you want to buy anything else? Yes/No:");
+                                            if (Console.ReadLine().ToLower() == "no")
+                                            {
+                                                check = false;
+                                            }
+                                            ship.Continues();
+
+                                        } while (check);
                                         break;
 
                                     case 2:
@@ -236,7 +275,46 @@ namespace SpaceGameProject
                                 {
                                     case 1:
                                         //Buy
+                                        bool check = true;
+                                        do
+                                        {
+                                            ship.Continues();
 
+                                            Console.WriteLine("Where do you want to place the item you buy");
+                                            ship.DisplayInventory();
+
+                                            yzelta.Stock();
+
+                                            Console.Write("Choose:");
+                                            int itemPlace = (int.Parse(Console.ReadLine()) - 1);
+                                            Goods input = Goods.Empty;
+                                            int price = 0;
+
+
+                                            Console.WriteLine("What Item would you like to buy?");
+
+                                            switch (int.Parse(Console.ReadLine()))
+                                            {
+                                                case 1:
+                                                    input = yzelta.merchantInventory[0];
+                                                    price = 300;
+                                                    break;
+
+                                                case 2:
+                                                    input = yzelta.merchantInventory[1];
+                                                    price = 100;
+                                                    break;
+                                            }
+                                            ship.BuyMethod(itemPlace, input, price);
+
+                                            Console.Write("Do you want to buy anything else? Yes/No:");
+                                            if (Console.ReadLine().ToLower() == "no")
+                                            {
+                                                check = false;
+                                            }
+                                            ship.Continues();
+
+                                        } while (check);
                                         break;
 
                                     case 2:
@@ -262,7 +340,46 @@ namespace SpaceGameProject
                                 {
                                     case 1:
                                         //Buy
+                                        bool check = true;
+                                        do
+                                        {
+                                            ship.Continues();
 
+                                            Console.WriteLine("Where do you want to place the item you buy");
+                                            ship.DisplayInventory();
+
+                                            zephyr.Stock();
+
+                                            Console.Write("Choose:");
+                                            int itemPlace = (int.Parse(Console.ReadLine()) - 1);
+                                            Goods input = Goods.Empty;
+                                            int price = 0;
+
+
+                                            Console.WriteLine("What Item would you like to buy?");
+
+                                            switch (int.Parse(Console.ReadLine()))
+                                            {
+                                                case 1:
+                                                    input = zephyr.merchantInventory[0];
+                                                    price = 300;
+                                                    break;
+
+                                                case 2:
+                                                    input = zephyr.merchantInventory[1];
+                                                    price = 100;
+                                                    break;
+                                            }
+                                            ship.BuyMethod(itemPlace, input, price);
+
+                                            Console.Write("Do you want to buy anything else? Yes/No:");
+                                            if (Console.ReadLine().ToLower() == "no")
+                                            {
+                                                check = false;
+                                            }
+                                            ship.Continues();
+
+                                        } while (check);
                                         break;
 
                                     case 2:
@@ -288,7 +405,46 @@ namespace SpaceGameProject
                                 {
                                     case 1:
                                         //Buy
+                                        bool check = true;
+                                        do
+                                        {
+                                            ship.Continues();
 
+                                            Console.WriteLine("Where do you want to place the item you buy");
+                                            ship.DisplayInventory();
+
+                                            ashton.Stock();
+
+                                            Console.Write("Choose:");
+                                            int itemPlace = (int.Parse(Console.ReadLine()) - 1);
+                                            Goods input = Goods.Empty;
+                                            int price = 0;
+
+
+                                            Console.WriteLine("What Item would you like to buy?");
+
+                                            switch (int.Parse(Console.ReadLine()))
+                                            {
+                                                case 1:
+                                                    input = ashton.merchantInventory[0];
+                                                    price = 300;
+                                                    break;
+
+                                                case 2:
+                                                    input = ashton.merchantInventory[1];
+                                                    price = 100;
+                                                    break;
+                                            }
+                                            ship.BuyMethod(itemPlace, input, price);
+
+                                            Console.Write("Do you want to buy anything else? Yes/No:");
+                                            if (Console.ReadLine().ToLower() == "no")
+                                            {
+                                                check = false;
+                                            }
+                                            ship.Continues();
+
+                                        } while (check);
                                         break;
 
                                     case 2:
