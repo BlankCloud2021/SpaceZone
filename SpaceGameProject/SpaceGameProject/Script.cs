@@ -83,6 +83,20 @@ namespace SpaceGameProject
             
         }
 
+        public void PlanetMenu(int fuel, int days)
+        {
+            Console.WriteLine("-----------------------------------------------");
+            Console.WriteLine("***************** Plant Menu *******************");
+            Console.WriteLine("-----------------------------------------------");
+            Console.WriteLine($"Fuel Level:{fuel}        Days Remaining:{days}");
+            Console.WriteLine();
+            Console.WriteLine("-----------------------------------------------");
+            Console.WriteLine("(1)\tEarth    (2)\tPluto");
+            Console.WriteLine();
+            Console.WriteLine("(3)\tMercury  (4)\tMars");
+            Console.WriteLine();
+            Console.WriteLine("(5)\tJupitar  (0)\tQuit");
+        }
     }
             /*
             Console.WriteLine("(1)\tCheck Inventory\n(2)\tStore Inventory\n(3)\tSelect Destination\n(4)\tSave\n(0)\tQuit");

@@ -272,30 +272,66 @@ namespace Planets
         }
         public void PlanetTravel(Planets current, Planets destination)
         {
-            Console.WriteLine("Where Do you Wnat to Go?");
+           
             // menu for ship travel 
-            
+            Console.WriteLine("Where Do you Wnat to Go?");
+            Console.WriteLine();
+
+            Console.Write("Destination:");
+
             try
             {
                 switch (int.Parse(Console.ReadLine()))
                 {
+                        
                     case 1:
-
-
+                        if (!(current == Planets.Earth))
+                        {
+                            destination = Planets.Earth;
+                        }
+                        else { Console.WriteLine("You already on earth!"); }
                         break;
 
                     case 2:
-
+                        if (!(current == Planets.Pluto))
+                        {
+                            destination = Planets.Pluto;
+                        }
+                        else { Console.WriteLine("You already on Pluto!"); }
 
                         break;
 
                     case 3:
-
+                        if (!(current == Planets.Mercury))
+                        {
+                            destination = Planets.Mercury;
+                        }
+                        else { Console.WriteLine("You already on Mercury!"); }
 
                         break;
 
                     case 4:
+                        if (!(current == Planets.Mars))
+                        {
+                            destination = Planets.Mars;
+                        }
+                        else { Console.WriteLine("You already on Mars!"); }
 
+                        break;
+
+                    case 5:
+                        if (!(current == Planets.Jupitar))
+                        {
+                            destination = Planets.Jupitar;
+                        }
+                        else { Console.WriteLine("You already on Jupitar!"); }
+
+                        break;
+
+                    case 0:
+
+                        Console.WriteLine("Returning to Main Menu");
+                        Continues();
 
                         break;
 
