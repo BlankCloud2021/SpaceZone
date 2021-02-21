@@ -38,12 +38,14 @@ namespace SpaceGameProject
             //Console.WriteLine("Days Remaining: XX");
             //Console.WriteLine();
 
-        public void MainMenu(int fuel = 0, int days = 0)
+        public void MainMenu(int fuel = 0, int days = 0, int wallet = 0)
         {
             Console.WriteLine("-----------------------------------------------");
             Console.WriteLine("***************** Main Menu *******************");
             Console.WriteLine("-----------------------------------------------");
             Console.WriteLine($"Fuel Level:{fuel}        Days Remaining:{days}");
+            Console.WriteLine();
+            Console.WriteLine($"           Current Funds:{wallet:C}             ");
             Console.WriteLine("-----------------------------------------------");
             Console.WriteLine("(1)\tCheck Inventory    (2)\tStore Inventory");
             Console.WriteLine();
@@ -65,18 +67,19 @@ namespace SpaceGameProject
             Console.WriteLine("-------------------------------------------------------");
         }
 
-        public void UpgradeScript(int maxInventory, int maxStorage, int maxFuel)
+        public void UpgradeScript(int maxInventory, int maxStorage, int maxFuel, int wallet)
         {
             Console.WriteLine("-----------------------------------------------");
             Console.WriteLine("************** Upgrade Station ****************");
             Console.WriteLine("-----------------------------------------------");
             Console.WriteLine("-----------------------------------------------");
             Console.WriteLine($"Max Fuel :{maxFuel}         Max Storage:{maxStorage}");
-            Console.WriteLine($"Max Inventory{maxInventory}");
+            Console.WriteLine($"Max Inventory{maxInventory} Current Funds:{wallet:C}");
             Console.WriteLine("-----------------------------------------------");
-            Console.WriteLine("(1)\tUpgrade Fuel     (2)\tUpgrade Storage ");
+            Console.WriteLine("(1)\tUpgrade Fuel       $300   (2)\tUpgrade Storage  $300 ");
             Console.WriteLine();
-            Console.WriteLine("(3)\tUpgrade Inventory     (0)\tQuit");
+            Console.WriteLine("(3)\tUpgrade Inventory  $300   (0)\tQuit ");
+            Console.WriteLine();
             
         }
 
