@@ -50,7 +50,7 @@ namespace SpaceGameProject
             Console.WriteLine("(1)\tCheck Inventory    (2)\tStore Inventory");
             Console.WriteLine();
             Console.WriteLine("(3)\tSelect Destination (4)\tUpgrades");
-            Console.WriteLine("(0)\tQuit");
+            Console.WriteLine("(5)\tUpgrades           (0)\tQuit");
         }
         
         public void InventoryScript()

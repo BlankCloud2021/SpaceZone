@@ -163,12 +163,12 @@ namespace SpaceGameProject
                                             switch (int.Parse(Console.ReadLine()))
                                             {
                                                 case 1:
-                                                    input = ikora.merchantInventory[0];
+                                                    input5 = ikora.merchantInventory[0];
                                                     price = 300;
                                                     break;
 
                                                 case 2:
-                                                    input = ikora.merchantInventory[1];
+                                                    input5 = ikora.merchantInventory[1];
                                                     price = 100;
                                                     break;
                                             }
@@ -482,7 +482,7 @@ namespace SpaceGameProject
                                 }
 
                                 ship.Continues();
-                                break;
+                                break;      
                         }
 
                         break;
@@ -530,6 +530,13 @@ namespace SpaceGameProject
                                 continue;
                             }
                         } while (upgradeExit == false);
+                        break;
+
+                    case 5:
+
+                        ship.RefillFuel();
+                        Console.WriteLine("100 Fuel added to your tank.");
+
                         break;
 
                     case 0:
