@@ -316,7 +316,16 @@ namespace SpaceGameProject
                                                     input3 = yzelta.merchantInventory[1];
                                                     price = 100;
                                                     break;
-                                            }
+
+                                                case 3:
+                                                        input3 = yzelta.merchantInventory[2];
+                                                        price = 300;
+                                                        break;
+                                                case 4:
+                                                        input3 = yzelta.merchantInventory[3];
+                                                        price = 100;
+                                                        break;
+                                                }
                                             ship.BuyMethod(itemPlace, input3, price);
 
                                             Console.Write("Do you want to buy anything else? Yes/No:");
@@ -386,7 +395,17 @@ namespace SpaceGameProject
                                                     input1 = zephyr.merchantInventory[1];
                                                     price = 300;
                                                     break;
-                                            }
+
+                                                case 3:
+                                                    input1 = zephyr.merchantInventory[2];
+                                                    price = 300;
+                                                   break;
+
+                                               case 4:
+                                                    input1 = zephyr.merchantInventory[3];
+                                                    price = 100;
+                                                    break;
+                                                }
                                             ship.BuyMethod(itemPlace, input1, price);
 
                                             Console.Write("Do you want to buy anything else? Yes/No:");

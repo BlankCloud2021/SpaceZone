@@ -5,7 +5,7 @@ using System.Text;
 namespace Planets
 {
     //Enum For goods 
-    public enum Goods { Empty, Earth_Crystal, Heat_Crystal, Water_Crystal, Ice_Crystal, Gas_Crystal }
+    public enum Goods { Empty, Earth_Crystal, Heat_Crystal, Water_Crystal, Ice_Crystal, Gas_Crystal, Paper_Clip }
     //Testing push 4.5  
     //Testing  10
     //test frank
@@ -37,7 +37,7 @@ namespace Planets
             MaxFuel = 100;
             InventorySize = 10;
             StorageSize = 10;
-            Wallet = 1000;
+            Wallet = 2000;
             currentLocation = Planets.Earth;
 
             //int i = InventorySize;
@@ -354,6 +354,7 @@ namespace Planets
                 }
 
             } while (test);
+            Continues();
             return check;
         }
 
@@ -501,13 +502,20 @@ namespace Planets
             public void BuyMethod(int inventoryPlace, Goods itemBuy, int price)
             {
             // Adds items to inventory, removes money from wallet
-            bool value = WalletAltSub(price);
-            if (value == true)
+            if (this.ShipInventory[inventoryPlace] == Goods.Empty)
             {
-                this.ShipInventory[inventoryPlace] = itemBuy;
-                Console.WriteLine("Item has been added to your inventory");
-            }
 
+                bool value = WalletAltSub(price);
+                if (value == true)
+                {
+                    this.ShipInventory[inventoryPlace] = itemBuy;
+                    Console.WriteLine("Item has been added to your inventory");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Somethings already there!");
+            }
             Continues();
 
         }

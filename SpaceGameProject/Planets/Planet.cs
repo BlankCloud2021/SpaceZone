@@ -130,7 +130,7 @@ namespace Planets
 
         }
 
-        public Goods[] merchantInventory = new Goods[] { Goods.Ice_Crystal, Goods.Heat_Crystal, Goods.Earth_Crystal };
+        public Goods[] merchantInventory = new Goods[] { Goods.Ice_Crystal, Goods.Heat_Crystal, Goods.Earth_Crystal, Goods.Paper_Clip};
         //Print to the screen Merchants Inventory 
         public void Stock()
         {
@@ -168,7 +168,7 @@ namespace Planets
             
         }
 
-        public Goods[] merchantInventory = new Goods[] { Goods.Water_Crystal, Goods.Earth_Crystal, Goods.Ice_Crystal };
+        public Goods[] merchantInventory = new Goods[] { Goods.Water_Crystal, Goods.Earth_Crystal, Goods.Ice_Crystal,Goods.Paper_Clip };
         //Print to the screen Merchants Inventory 
         public void Stock()
         {
@@ -186,7 +186,7 @@ namespace Planets
             {
 
                 Console.WriteLine($"({++num})\t{merchantInventory[i]}                   {200:c}  ");
-                Console.WriteLine($"({++num})\t{merchantInventory[i++]}                 {300:c}  ");
+                Console.WriteLine($"({++num})\t{merchantInventory[++i]}                 {300:c}  ");
 
             }
         }
