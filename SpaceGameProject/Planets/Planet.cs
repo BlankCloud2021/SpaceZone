@@ -58,7 +58,7 @@ namespace Planets
         public void Stock()
         {
             Console.WriteLine("--------------------------------------------------");
-            Console.WriteLine("Items For Sale                        ");
+            Console.WriteLine("Items For Sale                         Price    ");
             Console.WriteLine("--------------------------------------------------");
 
             // Displays to the screen the inventory ad prices for merchant  
@@ -70,8 +70,8 @@ namespace Planets
             for (int i = 0; i < goods; i++)
             {
 
-                Console.Write($"({++num})\t{merchantInventory[i]} ");
-                Console.WriteLine($"({++num})\t{merchantInventory[++i]} ");
+                Console.WriteLine($"({++num})\t{merchantInventory[i]}                   {400:c}  ");
+                Console.WriteLine($"({++num})\t{merchantInventory[++i]}                 {300:c}  ");
 
             }
         }
@@ -96,7 +96,7 @@ namespace Planets
         public void Stock()
         {
             Console.WriteLine("--------------------------------------------------");
-            Console.WriteLine("Items For Sale                        ");
+            Console.WriteLine("Items For Sale                         Price    ");
             Console.WriteLine("--------------------------------------------------");
 
             // Displays to the screen the inventory ad prices for merchant  
@@ -108,8 +108,8 @@ namespace Planets
             for (int i = 0; i < goods; i++)
             {
 
-                Console.Write($"({++num})\t{merchantInventory[i]} ");
-                Console.WriteLine($"({++num})\t{merchantInventory[++i]} ");
+                Console.WriteLine($"({++num})\t{merchantInventory[i]}                   {300:c}  ");
+                Console.WriteLine($"({++num})\t{merchantInventory[++i]}                 {200:c}  ");
 
             }
         }
@@ -135,7 +135,7 @@ namespace Planets
         public void Stock()
         {
             Console.WriteLine("--------------------------------------------------");
-            Console.WriteLine("Items For Sale                        ");
+            Console.WriteLine("Items For Sale                         Price    ");
             Console.WriteLine("--------------------------------------------------");
 
             // Displays to the screen the inventory ad prices for merchant  
@@ -147,8 +147,8 @@ namespace Planets
             for (int i = 0; i < goods; i++)
             {
 
-                Console.Write($"({++num})\t{merchantInventory[i]} ");
-                Console.WriteLine($"({++num})\t{merchantInventory[++i]} ");
+                Console.WriteLine($"({++num})\t{merchantInventory[i]}                   {300:c}  ");
+                Console.WriteLine($"({++num})\t{merchantInventory[++i]}                 {100:c}  ");
 
             }
         }
@@ -173,7 +173,7 @@ namespace Planets
         public void Stock()
         {
             Console.WriteLine("--------------------------------------------------");
-            Console.WriteLine("Items For Sale                        ");
+            Console.WriteLine("Items For Sale                         Price    ");
             Console.WriteLine("--------------------------------------------------");
 
             // Displays to the screen the inventory ad prices for merchant  
@@ -185,8 +185,8 @@ namespace Planets
             for (int i = 0; i < goods; i++)
             {
 
-                Console.Write($"({++num})\t{merchantInventory[i]} ");
-                Console.WriteLine($"({++num})\t{merchantInventory[++i]} ");
+                Console.WriteLine($"({++num})\t{merchantInventory[i]}                   {200:c}  ");
+                Console.WriteLine($"({++num})\t{merchantInventory[++i]}                 {300:c}  ");
 
             }
         }
@@ -212,7 +212,7 @@ namespace Planets
         public void Stock()
         {
             Console.WriteLine("--------------------------------------------------");
-            Console.WriteLine("Items For Sale                        ");
+            Console.WriteLine("Items For Sale                         Price    ");
             Console.WriteLine("--------------------------------------------------");
 
             // Displays to the screen the inventory ad prices for merchant  
@@ -224,8 +224,8 @@ namespace Planets
             for (int i = 0; i < goods; i++)
             {
 
-                Console.Write($"({++num})\t{merchantInventory[i]} ");
-                Console.WriteLine($"({++num})\t{merchantInventory[++i]} ");
+                Console.WriteLine($"({++num})\t{merchantInventory[i]}                   {1000:c}  ");
+                Console.WriteLine($"({++num})\t{merchantInventory[++i]}                 {600:c}  ");
 
             }
         }

@@ -21,13 +21,13 @@ namespace SpaceGameProject
 
             //Main Menu
             //Welcomes player to adventure explains the rules And accpet a name for there ship.
-            text.Rules();
-            text.Welcome();
+            //text.Rules();
+            //text.Welcome();
 
-            ship.ShipName = Console.ReadLine().ToUpper();
-            String Player = ship.DisplayShip();
-            text.WelcomeShip(Player);
-            ship.Continues();
+            //ship.ShipName = Console.ReadLine().ToUpper();
+            //String Player = ship.DisplayShip();
+            //text.WelcomeShip(Player);
+            //ship.Continues();
 
             //Start The Menu And begin the game Loop should start here.
             do

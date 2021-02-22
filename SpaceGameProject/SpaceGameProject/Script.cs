@@ -55,8 +55,6 @@ namespace SpaceGameProject
             Console.WriteLine($"Welcome Home! On This day {DateTime.Today} We christen this vessel The {name} to the Galaxy");
         }
         
-            //Console.WriteLine("Days Remaining: XX");
-            //Console.WriteLine();
 
         public void MainMenu(int fuel = 0, int days = 0, int wallet = 0)
         {
@@ -117,23 +115,19 @@ namespace SpaceGameProject
             Console.WriteLine();
             Console.WriteLine("(5)\tJupitar  (0)\tQuit");
         }
+
     }
             /*
-            Console.WriteLine("(1)\tCheck Inventory\n(2)\tStore Inventory\n(3)\tSelect Destination\n(4)\tSave\n(0)\tQuit");
-            Console.WriteLine();
+           
 
-            Console.WriteLine("What Planet to travel\n(1)\tMars\n(2)\tSun\n(3)\tJupiter\n(4)\tPluto");
-            Console.WriteLine();
+            
 
             Console.WriteLine("Sorry on your journey to (Planet) You suffered from acute death.");
             Console.WriteLine();
 
-            Console.WriteLine("Welcome to {Planet} My name is {Merchant}\n I am {Characteristics} So watch yourself.\n(1)\tWhat Cha buying\n(2)\tWhat cha Selling");
-            Console.WriteLine();
+            
 
-            Console.WriteLine("-------------------------------------------------");
-            Console.WriteLine("Item for sale                           Price ");
-            Console.WriteLine("-------------------------------------------------");
+           
 
             Console.WriteLine("(1)\tEarth Crystal                       $200\n(2)\tHeat Crystal                        $300\n(3)\tIce Crystal                         $200\n(4)\tGas Crystal                         $300\n(5)\tWater Crystal                       $200");
 
