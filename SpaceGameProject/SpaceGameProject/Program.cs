@@ -38,6 +38,7 @@ namespace SpaceGameProject
                 try
                 {
                     text.MainMenu(ship.Fuel, game.daysRemaining, ship.Wallet);
+                        Console.WriteLine();
                     Console.WriteLine("What would you like to do?");
                     uInput = int.Parse(Console.ReadLine());
                         x = false;
@@ -130,6 +131,8 @@ namespace SpaceGameProject
                         bool backToMenu =ship.PlanetTravel(ship.currentLocation,ship.destination);
                        
                         game.daysRemaining = ship.ChooseDestination(ship.currentLocation, ship.destination, game.daysRemaining);
+
+                        game.CheckDeath(ship.ShipInventory, ship.ShipStorage, ship.destination, game.daysRemaining, ship.Fuel);
 
                         if (backToMenu) 
                         switch (ship.destination)

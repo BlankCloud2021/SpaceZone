@@ -186,7 +186,7 @@ namespace Planets
             {
 
                 Console.WriteLine($"({++num})\t{merchantInventory[i]}                   {200:c}  ");
-                Console.WriteLine($"({++num})\t{merchantInventory[++i]}                 {300:c}  ");
+                Console.WriteLine($"({++num})\t{merchantInventory[i++]}                 {300:c}  ");
 
             }
         }

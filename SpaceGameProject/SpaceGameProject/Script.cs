@@ -68,6 +68,7 @@ namespace SpaceGameProject
             Console.WriteLine("(1)\tCheck Inventory    (2)\tStore Inventory");
             Console.WriteLine();
             Console.WriteLine("(3)\tSelect Destination (4)\tUpgrades");
+            Console.WriteLine();
             Console.WriteLine("(5)\tFuel Refill        (0)\tQuit");
         }
         
@@ -92,7 +93,7 @@ namespace SpaceGameProject
             Console.WriteLine("-----------------------------------------------");
             Console.WriteLine("-----------------------------------------------");
             Console.WriteLine($"Max Fuel:{maxFuel}           Max Storage:{maxStorage}");
-            Console.WriteLine($"Max Inventory:{maxInventory} Current Funds:{wallet:C}");
+            Console.WriteLine($"Max Inventory:{maxInventory} \t Current Funds:{wallet:C}");
             Console.WriteLine("-----------------------------------------------");
             Console.WriteLine("(1)\tUpgrade Fuel       $300   (2)\tUpgrade Storage  $300 ");
             Console.WriteLine();
@@ -117,26 +118,5 @@ namespace SpaceGameProject
         }
 
     }
-            /*
-           
-
             
-
-            Console.WriteLine("Sorry on your journey to (Planet) You suffered from acute death.");
-            Console.WriteLine();
-
-            
-
-           
-
-            Console.WriteLine("(1)\tEarth Crystal                       $200\n(2)\tHeat Crystal                        $300\n(3)\tIce Crystal                         $200\n(4)\tGas Crystal                         $300\n(5)\tWater Crystal                       $200");
-
-            Console.WriteLine("Money in your wallet: $XX");
-            Console.WriteLine();
-
-
-            Console.WriteLine("10 Days remain\nDawn of the final Day");
-            Console.WriteLine();
-        */
-    
 }
