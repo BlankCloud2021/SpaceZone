@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Threading;
 
 namespace SpaceGameProject
 {
@@ -15,16 +15,36 @@ namespace SpaceGameProject
             public void Welcome()
         {
             Console.ForegroundColor = ConsoleColor.DarkYellow;
-
-            Console.WriteLine("Welcome to the Space Game! ");
+            string text = "Welcome to the Space Game! ";
+            string text2 = "This Story is set on an apocalyptic planet called Earth in 3021. With only 5,000 days  until the planets\n demise, you are an Elemental Merchant task Traveling the 5 worlds known to man buying and selling\n goods. Your goal is to buy 2 Gas crystals and return to earth to secure the earths survival.\n Be warned certain aspects of the day will spell your doom!";
+            foreach (char Text in text)
+            {
+                Console.Write(Text);
+                Thread.Sleep(100);
+            }
+            
             Console.WriteLine();
+            Thread.Sleep(2000);
 
-            Console.WriteLine("This Story is set on an apocalyptic planet called Earth in 3021. With only 5,000 days  until the planets\n demise, you are an Elemental Merchant task Traveling the 5 worlds known to man buying and selling\n goods. Your goal is to buy 2 Gas crystals and return to earth to secure the earths survival.\n Be warned certain aspects of the day will spell your doom!");
+            foreach (char Text in text2)
+            {
+                Console.Write(Text);
+                Thread.Sleep(50);
+            }
             Console.WriteLine();
+            Console.WriteLine("Press any Key to Continue");
+            Console.ReadKey();
 
-            Console.WriteLine("Your journey begins enter the name of your Ship");
+            Console.Clear();
+
+            string text3 = "Your journey begins enter the name of your Ship";
+            foreach (char Text in text3)
+            {
+                Console.Write(Text);
+                Thread.Sleep(50);
+            }
             Console.WriteLine();
-
+           
             Console.Write("Your Ship Name:");
         }
 
