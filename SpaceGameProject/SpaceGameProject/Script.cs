@@ -10,7 +10,7 @@ namespace SpaceGameProject
        
         public void Rules()
         {
-            //Write all the rules settings and opjectives
+        
         }
             public void Welcome()
         {
@@ -19,7 +19,7 @@ namespace SpaceGameProject
             Console.WriteLine("Welcome to the Space Game! ");
             Console.WriteLine();
 
-            Console.WriteLine("This Story is set on an apocalyptic planet called Earth in 3021. With only 5,000 days  until the planets\n demise, you are an Elemental Merchant task Traveling the 5 worlds known to man buying and selling\n goods. Your goal is to buy 2 Gas crystals and return to earth to secure the earths survival.");
+            Console.WriteLine("This Story is set on an apocalyptic planet called Earth in 3021. With only 5,000 days  until the planets\n demise, you are an Elemental Merchant task Traveling the 5 worlds known to man buying and selling\n goods. Your goal is to buy 2 Gas crystals and return to earth to secure the earths survival.\n Be warned certain aspects of the day will spell your doom!");
             Console.WriteLine();
 
             Console.WriteLine("Your journey begins enter the name of your Ship");
