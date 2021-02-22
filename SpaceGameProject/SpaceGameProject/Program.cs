@@ -127,10 +127,11 @@ namespace SpaceGameProject
                         //Game
                         text.PlanetMenu(ship.Fuel, game.daysRemaining);
                        
-                        ship.PlanetTravel(ship.currentLocation,ship.destination);
+                        bool backToMenu =ship.PlanetTravel(ship.currentLocation,ship.destination);
                        
                         game.daysRemaining = ship.ChooseDestination(ship.currentLocation, ship.destination, game.daysRemaining);
-                       
+
+                        if (backToMenu) 
                         switch (ship.destination)
                         {
                             case Planets.Planets.Earth:
@@ -164,12 +165,12 @@ namespace SpaceGameProject
                                             {
                                                 case 1:
                                                     input5 = ikora.merchantInventory[0];
-                                                    price = 300;
+                                                    price = 400;
                                                     break;
 
                                                 case 2:
                                                     input5 = ikora.merchantInventory[1];
-                                                    price = 100;
+                                                    price = 300;
                                                     break;
                                             }
                                             ship.BuyMethod(itemPlace, input5, price);
@@ -240,7 +241,7 @@ namespace SpaceGameProject
 
                                                 case 2:
                                                     input4 = zeplin.merchantInventory[1];
-                                                    price = 100;
+                                                    price = 200;
                                                     break;
                                             }
                                             ship.BuyMethod(itemPlace, input4, price);
@@ -375,12 +376,12 @@ namespace SpaceGameProject
                                             {
                                                 case 1:
                                                     input1 = zephyr.merchantInventory[0];
-                                                    price = 300;
+                                                    price = 200;
                                                     break;
 
                                                 case 2:
                                                     input1 = zephyr.merchantInventory[1];
-                                                    price = 100;
+                                                    price = 300;
                                                     break;
                                             }
                                             ship.BuyMethod(itemPlace, input1, price);
@@ -445,12 +446,12 @@ namespace SpaceGameProject
                                             {
                                                 case 1:
                                                     input2 = ashton.merchantInventory[0];
-                                                    price = 300;
+                                                    price = 1000;
                                                     break;
 
                                                 case 2:
                                                     input2 = ashton.merchantInventory[1];
-                                                    price = 100;
+                                                    price = 600;
                                                     break;
                                             }
                                             ship.BuyMethod(itemPlace, input2, price);

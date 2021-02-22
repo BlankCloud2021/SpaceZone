@@ -50,7 +50,7 @@ namespace SpaceGameProject
             Console.WriteLine("(1)\tCheck Inventory    (2)\tStore Inventory");
             Console.WriteLine();
             Console.WriteLine("(3)\tSelect Destination (4)\tUpgrades");
-            Console.WriteLine("(5)\tUpgrades           (0)\tQuit");
+            Console.WriteLine("(5)\tFuel Refill        (0)\tQuit");
         }
         
         public void InventoryScript()
@@ -73,8 +73,8 @@ namespace SpaceGameProject
             Console.WriteLine("************** Upgrade Station ****************");
             Console.WriteLine("-----------------------------------------------");
             Console.WriteLine("-----------------------------------------------");
-            Console.WriteLine($"Max Fuel :{maxFuel}         Max Storage:{maxStorage}");
-            Console.WriteLine($"Max Inventory{maxInventory} Current Funds:{wallet:C}");
+            Console.WriteLine($"Max Fuel:{maxFuel}           Max Storage:{maxStorage}");
+            Console.WriteLine($"Max Inventory:{maxInventory} Current Funds:{wallet:C}");
             Console.WriteLine("-----------------------------------------------");
             Console.WriteLine("(1)\tUpgrade Fuel       $300   (2)\tUpgrade Storage  $300 ");
             Console.WriteLine();

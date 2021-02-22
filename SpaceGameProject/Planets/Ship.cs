@@ -270,9 +270,9 @@ namespace Planets
 
             Continues();
         }
-        public void PlanetTravel(Planets current, Planets destination)
+        public bool PlanetTravel(Planets current, Planets destination)
         {
-           
+            bool check = true;
             // menu for ship travel 
             Console.WriteLine("Where Do you Wnat to Go?");
             Console.WriteLine();
@@ -293,6 +293,8 @@ namespace Planets
                                this.destination  = Planets.Earth;
                             }
                             else { Console.WriteLine("You already on earth!"); }
+                            check = true;
+
                             break;
 
                         case 2:
@@ -301,6 +303,7 @@ namespace Planets
                                this.destination = Planets.Pluto;
                             }
                             else { Console.WriteLine("You already on Pluto!"); }
+                            check = true;
 
                             break;
 
@@ -310,6 +313,7 @@ namespace Planets
                                 this.destination = Planets.Mercury;
                             }
                             else { Console.WriteLine("You already on Mercury!"); }
+                            check = true;
 
                             break;
 
@@ -319,6 +323,7 @@ namespace Planets
                                 this.destination = Planets.Mars;
                             }
                             else { Console.WriteLine("You already on Mars!"); }
+                            check = true;
 
                             break;
 
@@ -328,6 +333,7 @@ namespace Planets
                                 this.destination = Planets.Jupitar;
                             }
                             else { Console.WriteLine("You already on Jupitar!"); }
+                            check = true;
 
                             break;
 
@@ -336,6 +342,7 @@ namespace Planets
                             Console.WriteLine("Returning to Main Menu");
                             Continues();
 
+                           check = false;
                             break;
     
                     }
@@ -348,7 +355,7 @@ namespace Planets
                 }
 
             } while (test);
-
+            return check;
         }
 
             public int ChooseDestination(Planets current, Planets destination, int days)//input 2 planets, Change the math for cases
@@ -518,25 +525,25 @@ namespace Planets
                 {
                     case Goods.Earth_Crystal:
                         ShipInventory[itemsell] = Goods.Empty;
-                        Wallet += 100;
+                        Wallet += 300;
 
                         break;
 
                     case Goods.Heat_Crystal:
                         ShipInventory[itemsell] = Goods.Empty;
-                        Wallet += 100;
+                        Wallet += 400;
 
                         break;
 
 
                     case Goods.Ice_Crystal:
                         ShipInventory[itemsell] = Goods.Empty;
-                        Wallet += 100;
+                        Wallet += 300;
 
                         break;
                     case Goods.Gas_Crystal:
                         ShipInventory[itemsell] = Goods.Empty;
-                        Wallet += 100;
+                        Wallet += 800;
 
                         break;
 

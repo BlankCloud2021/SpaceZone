@@ -23,19 +23,6 @@ namespace Planets
 
         //Method
 
-        public void ViewInventory()//might not need
-        {
-            // Prints to the screen items in the inventory
-
-        }
-
-        public void DisplayPlanet()
-        {
-            // Displays the planets buying menu
-            //Create an instance of each planet in a switch statment to call there script and inventory
-
-        }
-
         // Checks for deaths based on the in game Items
         public void CheckDeath(Goods[] inventory, Goods[] storage, Planets destination, int Days, int fuel)
         {
