@@ -51,6 +51,55 @@ namespace Planets
         //Methods
 
         //Difficulty Methods
+        public void Difficulty(int difficulty)
+        {
+            switch (difficulty)
+            {
+                case 0:
+                    Console.WriteLine("Wimp Mode Engaged");
+                    Continues();
+                    break;
+                case 1:
+                    //Hard
+                    Fuel = 100;
+                    MaxFuel = 100;
+                    InventorySize = 10;
+                    StorageSize = 10;
+                    Wallet = 500;
+
+                    Console.WriteLine("Hard Mode Engaged");
+                    Continues();
+
+                    break;
+
+                case 2:
+                    // Soul crushing
+                    Fuel = 50;
+                    MaxFuel = 100;
+                    InventorySize = 5;
+                    StorageSize = 5;
+                    Wallet = 100;
+
+                    Console.WriteLine("Da Real One Has Arrived");
+                    Continues();
+                    break;
+
+                case 82882:
+                    //Admin
+                    Fuel = 300;
+                    MaxFuel = 300;
+                    InventorySize = 50;
+                    StorageSize = 50;
+                    Wallet = 15000;
+
+                    Console.WriteLine("Wimp Mode Engaged");
+                    Continues();
+                    break;
+            }
+           
+        }
+        
+
 
         public void Continues()
         {

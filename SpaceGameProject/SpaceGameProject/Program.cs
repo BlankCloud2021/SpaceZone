@@ -29,6 +29,14 @@ namespace SpaceGameProject
             text.WelcomeShip(Player);
             ship.Continues();
 
+            Console.WriteLine("Select Player Difficulty:");
+            Console.WriteLine("(0)Easy (1)Hard (2)Soul Crushing ");
+            int difficulty = int.Parse(Console.ReadLine());
+
+            ship.Difficulty(difficulty);
+
+            
+
             //Start The Menu And begin the game Loop should start here.
             do
             {
