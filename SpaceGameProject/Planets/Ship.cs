@@ -34,7 +34,7 @@ namespace Planets
             MaxFuel = 100;
             InventorySize = 10;
             StorageSize = 10;
-            Wallet = 2000;
+            Wallet = 1000;
             currentLocation = Planets.Earth;
 
             //int i = InventorySize;
@@ -246,7 +246,7 @@ namespace Planets
                 }
                 else if (Fuel == MaxFuel)
                 {
-                    Console.WriteLine("Dude, you just toped of why even bother");
+                    Console.WriteLine("Dude, you just toped of why even bother \n I'll still take your money though.");
                 }
             }
             Continues();

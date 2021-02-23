@@ -16,7 +16,7 @@ namespace SpaceGameProject
         {
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             string text = "Welcome to the Space Game! ";
-            string text2 = "This Story is set on an apocalyptic planet called Earth in 3021. With only 5,000 days  until the planets\n demise, you are an Elemental Merchant task Traveling the 5 worlds known to man buying and selling\n goods. Your goal is to buy 2 Gas crystals and return to earth to secure the earths survival.\n Be warned certain aspects of the day will spell your doom!";
+            string text2 = "This Story is set on an apocalyptic planet called Earth in 3021. With only 5,000 days  until the planets\n demise, you are an Elemental Merchant tasked Traveling the 5 worlds known to man buying and selling\n goods. Your goal is to buy 2 Gas crystals from Jupitar and return to earth to secure the earths survival.\n Be warned certain aspects of the journy will spell your doom!";
             foreach (char Text in text)
             {
                 Console.Write(Text);
