@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading;
+using Planets;
 
 namespace SpaceGameProject
 {
     
     public class Script
     {
+        Planet planet = new Planet();
        
         public void Rules()
         {
@@ -16,7 +18,7 @@ namespace SpaceGameProject
         {
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             string text = "Welcome to the Space Game! ";
-            string text2 = "This Story is set on an apocalyptic planet called Earth in 3021. With only 5,000 days  until the planets\n demise, you are an Elemental Merchant tasked Traveling the 5 worlds known to man buying and selling\n goods. Your goal is to buy 2 Gas crystals from Jupitar and return to earth to secure the earths survival.\n Be warned certain aspects of the journy will spell your doom!";
+            string text2 = "This Story is set on an apocalyptic planet called Earth in 3021. With only 5,000 days  until the planets\n demise, you are an Elemental Merchant tasked Traveling the known galaxy to man buying and selling\n goods. Your goal is to buy 2 Gas crystals from Jupitar and return to earth to secure the earths survival.\n Be warned certain aspects of the journy will spell your doom!";
             foreach (char Text in text)
             {
                 Console.Write(Text);
@@ -56,14 +58,16 @@ namespace SpaceGameProject
         }
         
 
-        public void MainMenu(int fuel = 0, int days = 0, int wallet = 0)
+        public void MainMenu(Planets.Planets currentPlanet,int fuel = 0, int days = 0, int wallet = 0 )
         {
             Console.WriteLine("-----------------------------------------------");
             Console.WriteLine("***************** Main Menu *******************");
             Console.WriteLine("-----------------------------------------------");
             Console.WriteLine($"Fuel Level:{fuel}        Days Remaining:{days}");
             Console.WriteLine();
-            Console.WriteLine($"           Current Funds:{wallet:C}             ");
+            Console.WriteLine($"           Current Funds:{wallet:C}            ");
+            Console.WriteLine("-----------------------------------------------");
+            Console.WriteLine($"           Current Planet:{currentPlanet}            ");
             Console.WriteLine("-----------------------------------------------");
             Console.WriteLine("(1)\tCheck Inventory    (2)\tStore Inventory");
             Console.WriteLine();

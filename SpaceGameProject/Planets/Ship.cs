@@ -34,10 +34,9 @@ namespace Planets
             MaxFuel = 100;
             InventorySize = 10;
             StorageSize = 10;
-            Wallet = 1000;
+            Wallet = 500;
             currentLocation = Planets.Earth;
 
-            //int i = InventorySize;
             ShipInventory = new Goods[50];
 
             //Adds to the ships Inventory one of each crystal
@@ -45,14 +44,14 @@ namespace Planets
             {
                 ShipInventory[I] = (Goods)I;
             }
-
-            // int s = StorageSize;
+           
             ShipStorage = new Goods[50];
         }
 
         //Methods
 
-        //Continues and clears the screen
+        //Difficulty Methods
+
         public void Continues()
         {
             Console.WriteLine("Press any Key to Continue");
@@ -61,7 +60,7 @@ namespace Planets
             Console.Clear();
         }
 
-        // Checks to see if enough money is in wallet to make a purchase
+        
         public bool WalletAltSub(int cost)
         {
 
@@ -83,7 +82,7 @@ namespace Planets
         }
 
 
-        //Return the ships name 
+        
         public String DisplayShip()
         {
             string? text = null;
@@ -93,14 +92,12 @@ namespace Planets
 
         }
 
-        //Prints to screen the current inventory. --note Fix first item in array being Empty 
+        
         public void DisplayInventory()
         {
             int goods = InventorySize;
 
             int num = 0;
-            //Display The inventory Array 
-            //First space is empty and *To Do
             for (int i = 0; i < goods; i++)
             {
 
@@ -109,11 +106,10 @@ namespace Planets
             }
         }
 
-        //Increases the Max Numbers you can store in you inventory
+        
         public void UpgradeInventory()
         {
-            // Increase the max array of the inventroy by 5 each time called then subtracts the cost of the upgrade from the wallet 
-
+            
             bool value = WalletAltSub(300);
             if (value == true)
             {
@@ -355,12 +351,8 @@ namespace Planets
             return check;
         }
 
-            public int ChooseDestination(Planets current, Planets destination, int days)//input 2 planets, Change the math for cases
+        public int ChooseDestination(Planets current, Planets destination, int days)
             {
-                //Takes in the destination and return the Days, and Fuel used.
-                // Set current location to destination
-                // subract fuel based on distance between 
-                //Sub days traveled
 
             //Earth
                 if (current == Planets.Earth && destination == Planets.Mars)
@@ -496,7 +488,7 @@ namespace Planets
             return days;
         }
 
-            public void BuyMethod(int inventoryPlace, Goods itemBuy, int price)
+        public void BuyMethod(int inventoryPlace, Goods itemBuy, int price)
             {
             // Adds items to inventory, removes money from wallet
             if (this.ShipInventory[inventoryPlace] == Goods.Empty)
@@ -517,37 +509,284 @@ namespace Planets
 
         }
 
-            public void SellMethod(int itemsell, int price = 0 )
+        public void SellMethod(int itemsell, Planets planet)
             {
-            // Removes item form inventory, Adds money to wallet.
 
             Goods item = ShipInventory[itemsell];
             if (!(item == Goods.Empty))
             {
-
+                //Radamize a Gift
                 switch (item)
                 {
                     case Goods.Earth_Crystal:
-                        ShipInventory[itemsell] = Goods.Empty;
-                        Wallet += 300;
+
+                        switch (planet)
+                        {
+                            case Planets.Earth:
+                                Console.WriteLine("I'll Buy It A High Price $50.\n Sound Good? Y/N");
+                                if(Console.ReadLine().ToLower() == "y")
+                                {
+                                    ShipInventory[itemsell] = Goods.Empty;
+                                    Wallet += 50;
+                                    Console.WriteLine("Heh,Heh Thank Ya Stranger");
+                                }
+                                else
+                                    Console.WriteLine("Very well...");
+                                
+                                break;
+                            case Planets.Pluto:
+                                Console.WriteLine("I'll Buy It A High Price $50.\n Sound Good? Y/N");
+                                if (Console.ReadLine().ToLower() == "y")
+                                {
+                                    ShipInventory[itemsell] = Goods.Empty;
+                                    Wallet += 450;
+                                    Console.WriteLine("Heh,Heh Thank Ya Stranger");
+                                }
+                                else
+                                    Console.WriteLine("Very well...");
+                               
+                                break;
+                            case Planets.Mercury:
+                                Console.WriteLine("I'll Buy It A High Price $50.\n Sound Good? Y/N");
+                                if (Console.ReadLine().ToLower() == "y")
+                                {
+                                    ShipInventory[itemsell] = Goods.Empty;
+                                    Wallet += 100;
+                                    Console.WriteLine("Heh,Heh Thank Ya Stranger");
+                                }
+                                else
+                                    Console.WriteLine("Very well...");
+                               
+                                break;
+                            case Planets.Mars:
+                                Console.WriteLine("I'll Buy It A High Price $50.\n Sound Good? Y/N");
+                                if (Console.ReadLine().ToLower() == "y")
+                                {
+                                    ShipInventory[itemsell] = Goods.Empty;
+                                    Wallet += 300;
+                                    Console.WriteLine("Heh,Heh Thank Ya Stranger");
+                                }
+                                else
+                                    Console.WriteLine("Very well...");
+                                
+                                break;
+                            case Planets.Jupitar:
+                                Console.WriteLine("I'll Buy It A High Price $50.\n Sound Good? Y/N");
+                                if (Console.ReadLine().ToLower() == "y")
+                                {
+                                    ShipInventory[itemsell] = Goods.Empty;
+                                    Wallet += 70;
+                                    Console.WriteLine("Heh,Heh Thank Ya Stranger");
+                                }
+                                else
+                                    Console.WriteLine("Very well...");
+                                
+                                break;
+                        }
+                       
 
                         break;
 
                     case Goods.Heat_Crystal:
-                        ShipInventory[itemsell] = Goods.Empty;
-                        Wallet += 400;
-
+                        switch (planet)
+                        {
+                            case Planets.Earth:
+                                Console.WriteLine("I'll Buy It A High Price $50.\n Sound Good? Y/N");
+                                if (Console.ReadLine().ToLower() == "y")
+                                {
+                                    ShipInventory[itemsell] = Goods.Empty;
+                                    Wallet += 400;
+                                    Console.WriteLine("Heh,Heh Thank Ya Stranger");
+                                }
+                                else
+                                    Console.WriteLine("Very well...");
+                                
+                                break;
+                            case Planets.Pluto:
+                                Console.WriteLine("I'll Buy It A High Price $50.\n Sound Good? Y/N");
+                                if (Console.ReadLine().ToLower() == "y")
+                                {
+                                    ShipInventory[itemsell] = Goods.Empty;
+                                    Wallet += 200;
+                                    Console.WriteLine("Heh,Heh Thank Ya Stranger");
+                                }
+                                else
+                                    Console.WriteLine("Very well...");
+                                
+                                break;
+                            case Planets.Mercury:
+                                Console.WriteLine("I'll Buy It A High Price $50.\n Sound Good? Y/N");
+                                if (Console.ReadLine().ToLower() == "y")
+                                {
+                                    ShipInventory[itemsell] = Goods.Empty;
+                                    Wallet += 50;
+                                    Console.WriteLine("Heh,Heh Thank Ya Stranger");
+                                }
+                                else
+                                    Console.WriteLine("Very well...");
+                                
+                                break;
+                            case Planets.Mars:
+                                Console.WriteLine("I'll Buy It A High Price $50.\n Sound Good? Y/N");
+                                if (Console.ReadLine().ToLower() == "y")
+                                {
+                                    ShipInventory[itemsell] = Goods.Empty;
+                                    Wallet += 300;
+                                    Console.WriteLine("Heh,Heh Thank Ya Stranger");
+                                }
+                                else
+                                    Console.WriteLine("Very well...");
+                                
+                                break;
+                            case Planets.Jupitar:
+                                Console.WriteLine("I'll Buy It A High Price $50.\n Sound Good? Y/N");
+                                if (Console.ReadLine().ToLower() == "y")
+                                {
+                                    ShipInventory[itemsell] = Goods.Empty;
+                                    Wallet += 0;
+                                    Console.WriteLine("Heh,Heh Thank Ya Stranger");
+                                }
+                                else
+                                    Console.WriteLine("Very well...");
+                                
+                                break;
+                        }
+                      
                         break;
 
 
                     case Goods.Ice_Crystal:
-                        ShipInventory[itemsell] = Goods.Empty;
-                        Wallet += 300;
+                        switch (planet)
+                        {
+                            case Planets.Earth:
+                                Console.WriteLine("I'll Buy It A High Price $50.\n Sound Good? Y/N");
+                                if (Console.ReadLine().ToLower() == "y")
+                                {
+                                    ShipInventory[itemsell] = Goods.Empty;
+                                    Wallet += 100;
+                                    Console.WriteLine("Heh,Heh Thank Ya Stranger");
+                                }
+                                else
+                                    Console.WriteLine("Very well...");
+                               
+                                break;
+                            case Planets.Pluto:
+                                Console.WriteLine("I'll Buy It A High Price $50.\n Sound Good? Y/N");
+                                if (Console.ReadLine().ToLower() == "y")
+                                {
+                                    ShipInventory[itemsell] = Goods.Empty;
+                                    Wallet += 200;
+                                    Console.WriteLine("Heh,Heh Thank Ya Stranger");
+                                }
+                                else
+                                    Console.WriteLine("Very well...");
+                                
+                                break;
+                            case Planets.Mercury:
+                                Console.WriteLine("I'll Buy It A High Price $50.\n Sound Good? Y/N");
+                                if (Console.ReadLine().ToLower() == "y")
+                                {
+                                    ShipInventory[itemsell] = Goods.Empty;
+                                    Wallet += 500;
+                                    Console.WriteLine("Heh,Heh Thank Ya Stranger");
+                                }
+                                else
+                                    Console.WriteLine("Very well...");
+                               
+                                break;
+                            case Planets.Mars:
+                                Console.WriteLine("I'll Buy It A High Price $50.\n Sound Good? Y/N");
+                                if (Console.ReadLine().ToLower() == "y")
+                                {
+                                    ShipInventory[itemsell] = Goods.Empty;
+                                    Wallet += 150;
+                                    Console.WriteLine("Heh,Heh Thank Ya Stranger");
+                                }
+                                else
+                                    Console.WriteLine("Very well...");
+                                
+                                break;
+                            case Planets.Jupitar:
+                                Console.WriteLine("I'll Buy It A High Price $50.\n Sound Good? Y/N");
+                                if (Console.ReadLine().ToLower() == "y")
+                                {
+                                    ShipInventory[itemsell] = Goods.Empty;
+                                    Wallet += 100;
+                                    Console.WriteLine("Heh,Heh Thank Ya Stranger");
+                                }
+                                else
+                                    Console.WriteLine("Very well...");
+                                
+                                break;
+                        }
+                        
 
                         break;
                     case Goods.Gas_Crystal:
-                        ShipInventory[itemsell] = Goods.Empty;
-                        Wallet += 800;
+                        switch (planet)
+                        {
+                            case Planets.Earth:
+                                Console.WriteLine("I'll Buy It A High Price $50.\n Sound Good? Y/N");
+                                if (Console.ReadLine().ToLower() == "y")
+                                {
+                                    ShipInventory[itemsell] = Goods.Empty;
+                                    Wallet += 300;
+                                    Console.WriteLine("Heh,Heh Thank Ya Stranger");
+                                }
+                                else
+                                    Console.WriteLine("Very well...");
+                                
+                                break;
+                            case Planets.Pluto:
+                                Console.WriteLine("I'll Buy It A High Price $50.\n Sound Good? Y/N");
+                                if (Console.ReadLine().ToLower() == "y")
+                                {
+                                    ShipInventory[itemsell] = Goods.Empty;
+                                    Wallet += 800;
+                                    Console.WriteLine("Heh,Heh Thank Ya Stranger");
+                                }
+                                else
+                                    Console.WriteLine("Very well...");
+                                
+                                break;
+                            case Planets.Mercury:
+                                Console.WriteLine("I'll Buy It A High Price $50.\n Sound Good? Y/N");
+                                if (Console.ReadLine().ToLower() == "y")
+                                {
+                                    ShipInventory[itemsell] = Goods.Empty;
+                                    Wallet += 0;
+                                    Console.WriteLine("Heh,Heh Thank Ya Stranger");
+                                }
+                                else
+                                    Console.WriteLine("Very well...");
+                                
+                                break;
+                            case Planets.Mars:
+                                Console.WriteLine("I'll Buy It A High Price $50.\n Sound Good? Y/N");
+                                if (Console.ReadLine().ToLower() == "y")
+                                {
+                                    ShipInventory[itemsell] = Goods.Empty;
+                                    Wallet += 300;
+                                    Console.WriteLine("Heh,Heh Thank Ya Stranger");
+                                }
+                                else
+                                    Console.WriteLine("Very well...");
+                                
+                                break;
+                            case Planets.Jupitar:
+                                Console.WriteLine("I'll Buy It A High Price $50.\n Sound Good? Y/N");
+                                if (Console.ReadLine().ToLower() == "y")
+                                {
+                                    ShipInventory[itemsell] = Goods.Empty;
+                                    Wallet += 100;
+                                    Console.WriteLine("Heh,Heh Thank Ya Stranger");
+                                }
+                                else
+                                    Console.WriteLine("Very well...");
+                                
+                                break;
+                        }
+                     
 
                         break;
 

@@ -37,7 +37,7 @@ namespace SpaceGameProject
                 while(x)
                 try
                 {
-                    text.MainMenu(ship.Fuel, game.daysRemaining, ship.Wallet);
+                    text.MainMenu(ship.currentLocation, ship.Fuel, game.daysRemaining, ship.Wallet);
                         Console.WriteLine();
                     Console.WriteLine("What would you like to do?");
                     uInput = int.Parse(Console.ReadLine());
@@ -189,13 +189,15 @@ namespace SpaceGameProject
                                         break;
 
                                     case 2:
-                                        //Sell
-                                        ship.Continues();
-                                        Console.WriteLine("What do you want to sell");
-                                        ship.DisplayInventory();
-                                        int input = (int.Parse(Console.ReadLine())-1);
+                                            //Sell
+                                           
+                                                ship.Continues();
+                                                Console.WriteLine("What do you want to sell");
+                                                ship.DisplayInventory();
+                                                int input = (int.Parse(Console.ReadLine()) - 1);
 
-                                        ship.SellMethod(input);
+                                                ship.SellMethod(input, Planets.Planets.Earth);
+                                           
                                         break;
 
                                     case 0:
@@ -266,7 +268,7 @@ namespace SpaceGameProject
                                         ship.DisplayInventory();
                                         int input = (int.Parse(Console.ReadLine()) - 1);
 
-                                        ship.SellMethod(input);
+                                        ship.SellMethod(input,Planets.Planets.Pluto);
                                         break;
 
                                     case 0:
@@ -345,7 +347,7 @@ namespace SpaceGameProject
                                         ship.DisplayInventory();
                                         int input = (int.Parse(Console.ReadLine()) - 1);
 
-                                        ship.SellMethod(input);
+                                        ship.SellMethod(input,Planets.Planets.Mercury);
                                         break;
 
                                     case 0:
@@ -425,7 +427,7 @@ namespace SpaceGameProject
                                         ship.DisplayInventory();
                                         int input = (int.Parse(Console.ReadLine()) - 1);
 
-                                        ship.SellMethod(input);
+                                        ship.SellMethod(input,Planets.Planets.Mars);
                                         break;
 
                                     case 0:
@@ -495,7 +497,7 @@ namespace SpaceGameProject
                                         ship.DisplayInventory();
                                         int input = (int.Parse(Console.ReadLine()) - 1);
 
-                                        ship.SellMethod(input);
+                                        ship.SellMethod(input,Planets.Planets.Jupitar);
                                         break;
 
                                     case 0:

@@ -23,16 +23,14 @@ namespace Planets
 
         //Method
 
-        // Checks for deaths based on the in game Items
+     
         public void CheckDeath(Goods[] inventory, Goods[] storage, Planets destination, int Days, int fuel)
         {
-            //Takes in input and checks for all death conditions.
-            //Switch statment with all deaths.3
 
             // Combustion Mercury
             if (destination == Planets.Mercury)
             {
-                //If Gas crysatal in Inventory when traveling to
+                
                 int gasCount = 0;
 
                 for (int i = 0; i < inventory.Length; i++)
@@ -91,7 +89,7 @@ namespace Planets
             }
 
             //Earth Death
-            // Runs through Inventory and Storage if the are 2 or more gas Crystal game will exit.
+           
             if (Days <= 0)
             {
                 int gasCount = 0;
@@ -125,7 +123,6 @@ namespace Planets
 
         }
 
-        // Checks Win Condition Input both inventories
         public void WinCondition(Goods[] inventory, Goods[] storage)
         {
             //Run win game, checked at Earth
