@@ -92,7 +92,7 @@ namespace Planets
                     StorageSize = 50;
                     Wallet = 15000;
 
-                    Console.WriteLine("Wimp Mode Engaged");
+                    Console.WriteLine("Welcome Admin");
                     Continues();
                     break;
             }
@@ -158,13 +158,16 @@ namespace Planets
         
         public void UpgradeInventory()
         {
-            
-            bool value = WalletAltSub(300);
-            if (value == true)
+            if(InventorySize < 50)
             {
-                InventorySize += 5;
+                bool value = WalletAltSub(300);
+                if (value == true)
+                {
+                    InventorySize += 5;
 
+                }
             }
+            else { Console.WriteLine("Max Inventory Reached"); }
 
             Continues();
 
@@ -258,13 +261,16 @@ namespace Planets
         public void UpgradeStorage()
         {
             // Increase the max array of the inventroy by 5 each time called then subtracts the cost of the upgrade from the wallet 
-
-            bool value = WalletAltSub(300);
-            if (value == true)
+            if (StorageSize < 50)
             {
-                StorageSize += 5;
+                bool value = WalletAltSub(300);
+                if (value == true)
+                {
+                    StorageSize += 5;
 
+                }
             }
+            else { Console.WriteLine("Max Storage Reached"); }
 
             Continues();
 
