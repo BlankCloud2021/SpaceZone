@@ -5,16 +5,16 @@ using Planets;
 
 namespace SpaceGameProject
 {
-    
+
     public class Script
     {
         Planet planet = new Planet();
-       
+
         public void Rules()
         {
-        
+
         }
-            public void Welcome()
+        public void Welcome()
         {
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             string text = "Welcome to the Space Game! ";
@@ -24,7 +24,7 @@ namespace SpaceGameProject
                 Console.Write(Text);
                 Thread.Sleep(100);
             }
-            
+
             Console.WriteLine();
             Thread.Sleep(2000);
 
@@ -46,19 +46,19 @@ namespace SpaceGameProject
                 Thread.Sleep(50);
             }
             Console.WriteLine();
-           
+
             Console.Write("Your Ship Name:");
         }
 
 
-        
-           public void WelcomeShip(string name)
+
+        public void WelcomeShip(string name)
         {
             Console.WriteLine($"Welcome Home! On This day {DateTime.Today} We christen this vessel The {name} to the Galaxy");
         }
-        
 
-        public void MainMenu(Planets.Planets currentPlanet,int fuel = 0, int days = 0, int wallet = 0 )
+
+        public void MainMenu(Planets.Planets currentPlanet, int fuel = 0, int days = 0, int wallet = 0)
         {
             Console.WriteLine("-----------------------------------------------");
             Console.WriteLine("***************** Main Menu *******************");
@@ -75,14 +75,14 @@ namespace SpaceGameProject
             Console.WriteLine();
             Console.WriteLine("(5)\tFuel Refill        (0)\tQuit");
         }
-        
+
         public void InventoryScript()
         {
             Console.WriteLine("--------------------------------------------------");
             Console.WriteLine("Items in Inventory                       Quantity ");
             Console.WriteLine("--------------------------------------------------");
         }
-        
+
         public void StorageScript()
         {
             Console.WriteLine("-------------------------------------------------------");
@@ -103,7 +103,7 @@ namespace SpaceGameProject
             Console.WriteLine();
             Console.WriteLine("(3)\tUpgrade Inventory  $300   (0)\tQuit ");
             Console.WriteLine();
-            
+
         }
 
         public void PlanetMenu(int fuel, int days)
@@ -120,7 +120,33 @@ namespace SpaceGameProject
             Console.WriteLine();
             Console.WriteLine("(5)\tJupitar  (0)\tQuit");
         }
+        public void AssciartMenu()
+        {
+            Console.WriteLine("                  .                                            .");
+            Console.WriteLine("     *   .                  .              .        .   *          .");
+            Console.WriteLine("  .         .                     .       .           .      .        .");
+            Console.WriteLine("        o.                   .");
+            Console.WriteLine("         .              .                  .           .");
+            Console.WriteLine("          0    ");
+            Console.WriteLine("                 .          .                 ,                ,    ,");
+            Console.WriteLine(" .          \\          .                         .");
+            Console.WriteLine("      .      \\   ,");
+            Console.WriteLine("   .          o.                 .                   .            .");
+            Console.WriteLine("     .         \\                 ,             .                .");
+            Console.WriteLine("               #\\##\\#      .                              .        .");
+            Console.WriteLine("             #  #O##\\###                .                        .");
+            Console.WriteLine("   .        #*#  #\\##\\###                       .                     ,");
+            Console.WriteLine("        .   ##*#  #\\##\\##               .                     .");
+            Console.WriteLine("      .      ##*#  #o##\\#         .                             ,       .");
+            Console.WriteLine("          .     *#  #\\#     .                    .             .          ,");
+            Console.WriteLine("                      \\          .                         .");
+            Console.WriteLine("____^/\\___^--____/\\____O______________/\\/\\---/\\___________---______________");
+            Console.WriteLine("   /\\^   ^  ^    ^                  ^^ ^  '\\ ^          ^       ---");
+            Console.WriteLine("         --           -            --  -      -         ---  __       ^");
+            Console.WriteLine("   --  __ ___--  ^  ^                         --  __");
+        }
+      
+
 
     }
-            
 }

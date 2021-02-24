@@ -52,7 +52,7 @@ namespace Planets
         //Methods
 
         //Difficulty Methods
-        public void Difficulty(int difficulty)
+        public void Difficulty(int difficulty, int day)
         {
             switch (difficulty)
             {
@@ -67,6 +67,7 @@ namespace Planets
                     InventorySize = 10;
                     StorageSize = 10;
                     Wallet = 500;
+                    day = 2000;
 
                     Console.WriteLine("Hard Mode Engaged");
                     Continues();
@@ -80,6 +81,7 @@ namespace Planets
                     InventorySize = 5;
                     StorageSize = 5;
                     Wallet = 100;
+                    day = 500;
 
                     Console.WriteLine("Da Real One Has Arrived");
                     Continues();
@@ -929,7 +931,21 @@ namespace Planets
             else { Console.WriteLine("You didnt select anything"); }
             }
 
-
+        public void AssciartWin()
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("         .----------------.  .----------------.  .----------------.   .----------------.  .----------------.  .-----------------.");
+            Console.WriteLine("| .--------------. || .--------------. || .--------------. | | .--------------. || .--------------. || .--------------. |");
+            Console.WriteLine(" | |  ____ ____  | || |     ____     | || | _____ _____ | | | | _____ _____ | || |     _____    | || | ____ _____  | |");
+            Console.WriteLine(" | | |_ _||_ _| | || |   .'    `.   | || ||_   _||_   _|| | | ||_   _||_   _|| || |    |_   _|   | || ||_   \\|_   _| | |");
+            Console.WriteLine("| |   \\ \\  / /   | || |  /  .--.  \\  | || |  | |    | |  | | | |  | | /\\ | |  | || |      | |     | || |  |   \\ | |   | |");
+            Console.WriteLine("| |    \\ \\/ /    | || |  | |    | |  | || |  | '    ' |  | | | |  | |/  \\| |  | || |      | |     | || |  | |\\ \\| |   | |");
+            Console.WriteLine("  |    _|  |_    | || |  \\  `--'  /  | || |   \\ `--' /   | | | |  |   /\\   |  | || |     _| |_    | || | _| |_\\   |_  | |");
+            Console.WriteLine("| |   |______|   | || |   `.____.'   | || |    `.__.'    | | | |  |__/  \\__|  | || |    |_____|   | || ||_____|\\____| | |");
+            Console.WriteLine("| |              | || |              | || |              | | | |              | || |              | || |              | |");
+            Console.WriteLine("| '--------------' || '--------------' || '--------------' | | '--------------' || '--------------' || '--------------' |");
+            Console.WriteLine(" '----------------'  '----------------'  '----------------'   '----------------'  '----------------'  '----------------' ");
+        }
 
 
     }

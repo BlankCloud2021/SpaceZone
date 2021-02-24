@@ -33,7 +33,7 @@ namespace SpaceGameProject
             Console.WriteLine("(0)Easy (1)Hard (2)Soul Crushing ");
             int difficulty = int.Parse(Console.ReadLine());
 
-            ship.Difficulty(difficulty);
+            ship.Difficulty(difficulty,game.daysRemaining);
 
             
 
@@ -45,11 +45,13 @@ namespace SpaceGameProject
                 while(x)
                 try
                 {
+                    Console.ForegroundColor = ConsoleColor.White;
+                    text.AssciartMenu(); 
                     text.MainMenu(ship.currentLocation, ship.Fuel, game.daysRemaining, ship.Wallet);
-                        Console.WriteLine();
+                    Console.WriteLine();
                     Console.WriteLine("What would you like to do?");
                     uInput = int.Parse(Console.ReadLine());
-                        x = false;
+                    x = false;
                 }
                 catch
                 {

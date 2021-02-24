@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 
+
 namespace Planets
 {
     public class Game
     {
         Ship ship = new Ship();
-
+        
         //Feilds
 
         public int daysRemaining { get; set; }
@@ -42,6 +43,7 @@ namespace Planets
                 }
                 if (gasCount > 0)
                 {
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("You Fool! You've Doomed us all bringing that Gas crystal here!");
                     Console.WriteLine("The planet exploded, You have died!");
 
@@ -65,6 +67,7 @@ namespace Planets
                 }
                 if (heatCount > 0)
                 {
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("You Fool! You've Doomed us all bringing that Heat crystal here!");
                     Console.WriteLine("The planet exploded, You have died!");
 
@@ -112,6 +115,7 @@ namespace Planets
 
                 if (gasCount < 2)
                 {
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("The Earth Has run out of oxegen, everyone you know and love is dead.");
                     Console.WriteLine("You Lose!");
                     Thread.Sleep(2000);
@@ -147,9 +151,10 @@ namespace Planets
 
             if (gasCount >= 2)
             {
-                Console.WriteLine("-----------------------------------------------");
-                Console.WriteLine("****************** You Win ********************");
-                Console.WriteLine("-----------------------------------------------");
+                ship.AssciartWin();
+                //Console.WriteLine("-----------------------------------------------");
+                //Console.WriteLine("****************** You Win ********************");
+                //Console.WriteLine("-----------------------------------------------");
                 Console.WriteLine("Gongradulation You have saved the earth with your 2 gas crystals.");
                 
                 
