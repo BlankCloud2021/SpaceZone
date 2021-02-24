@@ -901,7 +901,7 @@ namespace Planets
                                 if (Console.ReadLine().ToLower() == "y")
                                 {
                                     ShipInventory[itemsell] = Goods.Empty;
-                                    Wallet += 400;
+                                    Wallet += 200;
                                     Console.WriteLine("Heh,Heh Thank Ya Stranger");
                                 }
                                 else
