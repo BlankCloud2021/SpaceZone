@@ -590,7 +590,7 @@ namespace Planets
                                 
                                 break;
                             case Planets.Pluto:
-                                Console.WriteLine("I'll Buy It A High Price $50.\n Sound Good? Y/N");
+                                Console.WriteLine("I'll Buy It A High Price $450.\n Sound Good? Y/N");
                                 if (Console.ReadLine().ToLower() == "y")
                                 {
                                     ShipInventory[itemsell] = Goods.Empty;
@@ -602,7 +602,7 @@ namespace Planets
                                
                                 break;
                             case Planets.Mercury:
-                                Console.WriteLine("I'll Buy It A High Price $50.\n Sound Good? Y/N");
+                                Console.WriteLine("I'll Buy It A High Price $100.\n Sound Good? Y/N");
                                 if (Console.ReadLine().ToLower() == "y")
                                 {
                                     ShipInventory[itemsell] = Goods.Empty;
@@ -614,11 +614,11 @@ namespace Planets
                                
                                 break;
                             case Planets.Mars:
-                                Console.WriteLine("I'll Buy It A High Price $50.\n Sound Good? Y/N");
+                                Console.WriteLine("I'll Buy It A High Price $400.\n Sound Good? Y/N");
                                 if (Console.ReadLine().ToLower() == "y")
                                 {
                                     ShipInventory[itemsell] = Goods.Empty;
-                                    Wallet += 300;
+                                    Wallet += 400;
                                     Console.WriteLine("Heh,Heh Thank Ya Stranger");
                                 }
                                 else
@@ -626,7 +626,7 @@ namespace Planets
                                 
                                 break;
                             case Planets.Jupitar:
-                                Console.WriteLine("I'll Buy It A High Price $50.\n Sound Good? Y/N");
+                                Console.WriteLine("I'll Buy It A High Price $70.\n Sound Good? Y/N");
                                 if (Console.ReadLine().ToLower() == "y")
                                 {
                                     ShipInventory[itemsell] = Goods.Empty;
@@ -646,11 +646,11 @@ namespace Planets
                         switch (planet)
                         {
                             case Planets.Earth:
-                                Console.WriteLine("I'll Buy It A High Price $50.\n Sound Good? Y/N");
+                                Console.WriteLine("I'll Buy It A High Price $550.\n Sound Good? Y/N");
                                 if (Console.ReadLine().ToLower() == "y")
                                 {
                                     ShipInventory[itemsell] = Goods.Empty;
-                                    Wallet += 400;
+                                    Wallet += 550;
                                     Console.WriteLine("Heh,Heh Thank Ya Stranger");
                                 }
                                 else
@@ -658,7 +658,7 @@ namespace Planets
                                 
                                 break;
                             case Planets.Pluto:
-                                Console.WriteLine("I'll Buy It A High Price $50.\n Sound Good? Y/N");
+                                Console.WriteLine("I'll Buy It A High Price $200.\n Sound Good? Y/N");
                                 if (Console.ReadLine().ToLower() == "y")
                                 {
                                     ShipInventory[itemsell] = Goods.Empty;
@@ -682,7 +682,7 @@ namespace Planets
                                 
                                 break;
                             case Planets.Mars:
-                                Console.WriteLine("I'll Buy It A High Price $50.\n Sound Good? Y/N");
+                                Console.WriteLine("I'll Buy It A High Price $300.\n Sound Good? Y/N");
                                 if (Console.ReadLine().ToLower() == "y")
                                 {
                                     ShipInventory[itemsell] = Goods.Empty;
@@ -694,7 +694,7 @@ namespace Planets
                                 
                                 break;
                             case Planets.Jupitar:
-                                Console.WriteLine("I'll Buy It A High Price $50.\n Sound Good? Y/N");
+                                Console.WriteLine("I'll Buy It A High Price $0.\n Sound Good? Y/N");
                                 if (Console.ReadLine().ToLower() == "y")
                                 {
                                     ShipInventory[itemsell] = Goods.Empty;
@@ -714,11 +714,11 @@ namespace Planets
                         switch (planet)
                         {
                             case Planets.Earth:
-                                Console.WriteLine("I'll Buy It A High Price $50.\n Sound Good? Y/N");
+                                Console.WriteLine("I'll Buy It A High Price $300.\n Sound Good? Y/N");
                                 if (Console.ReadLine().ToLower() == "y")
                                 {
                                     ShipInventory[itemsell] = Goods.Empty;
-                                    Wallet += 100;
+                                    Wallet += 300;
                                     Console.WriteLine("Heh,Heh Thank Ya Stranger");
                                 }
                                 else
@@ -726,7 +726,7 @@ namespace Planets
                                
                                 break;
                             case Planets.Pluto:
-                                Console.WriteLine("I'll Buy It A High Price $50.\n Sound Good? Y/N");
+                                Console.WriteLine("I'll Buy It A High Price $200.\n Sound Good? Y/N");
                                 if (Console.ReadLine().ToLower() == "y")
                                 {
                                     ShipInventory[itemsell] = Goods.Empty;
@@ -738,7 +738,7 @@ namespace Planets
                                 
                                 break;
                             case Planets.Mercury:
-                                Console.WriteLine("I'll Buy It A High Price $50.\n Sound Good? Y/N");
+                                Console.WriteLine("I'll Buy It A High Price $500.\n Sound Good? Y/N");
                                 if (Console.ReadLine().ToLower() == "y")
                                 {
                                     ShipInventory[itemsell] = Goods.Empty;
@@ -750,7 +750,7 @@ namespace Planets
                                
                                 break;
                             case Planets.Mars:
-                                Console.WriteLine("I'll Buy It A High Price $50.\n Sound Good? Y/N");
+                                Console.WriteLine("I'll Buy It A High Price $150.\n Sound Good? Y/N");
                                 if (Console.ReadLine().ToLower() == "y")
                                 {
                                     ShipInventory[itemsell] = Goods.Empty;
@@ -762,7 +762,7 @@ namespace Planets
                                 
                                 break;
                             case Planets.Jupitar:
-                                Console.WriteLine("I'll Buy It A High Price $50.\n Sound Good? Y/N");
+                                Console.WriteLine("I'll Buy It A High Price $100.\n Sound Good? Y/N");
                                 if (Console.ReadLine().ToLower() == "y")
                                 {
                                     ShipInventory[itemsell] = Goods.Empty;
@@ -781,11 +781,11 @@ namespace Planets
                         switch (planet)
                         {
                             case Planets.Earth:
-                                Console.WriteLine("I'll Buy It A High Price $50.\n Sound Good? Y/N");
+                                Console.WriteLine("I'll Buy It A High Price $900.\n Sound Good? Y/N");
                                 if (Console.ReadLine().ToLower() == "y")
                                 {
                                     ShipInventory[itemsell] = Goods.Empty;
-                                    Wallet += 300;
+                                    Wallet += 900;
                                     Console.WriteLine("Heh,Heh Thank Ya Stranger");
                                 }
                                 else
@@ -793,7 +793,7 @@ namespace Planets
                                 
                                 break;
                             case Planets.Pluto:
-                                Console.WriteLine("I'll Buy It A High Price $50.\n Sound Good? Y/N");
+                                Console.WriteLine("I'll Buy It A High Price $800.\n Sound Good? Y/N");
                                 if (Console.ReadLine().ToLower() == "y")
                                 {
                                     ShipInventory[itemsell] = Goods.Empty;
@@ -805,7 +805,7 @@ namespace Planets
                                 
                                 break;
                             case Planets.Mercury:
-                                Console.WriteLine("I'll Buy It A High Price $50.\n Sound Good? Y/N");
+                                Console.WriteLine("I'll Buy It A High Price $0.\n Sound Good? Y/N");
                                 if (Console.ReadLine().ToLower() == "y")
                                 {
                                     ShipInventory[itemsell] = Goods.Empty;
@@ -817,11 +817,11 @@ namespace Planets
                                 
                                 break;
                             case Planets.Mars:
-                                Console.WriteLine("I'll Buy It A High Price $50.\n Sound Good? Y/N");
+                                Console.WriteLine("I'll Buy It A High Price $700.\n Sound Good? Y/N");
                                 if (Console.ReadLine().ToLower() == "y")
                                 {
                                     ShipInventory[itemsell] = Goods.Empty;
-                                    Wallet += 300;
+                                    Wallet += 700;
                                     Console.WriteLine("Heh,Heh Thank Ya Stranger");
                                 }
                                 else
@@ -829,7 +829,7 @@ namespace Planets
                                 
                                 break;
                             case Planets.Jupitar:
-                                Console.WriteLine("I'll Buy It A High Price $50.\n Sound Good? Y/N");
+                                Console.WriteLine("I'll Buy It A High Price $100.\n Sound Good? Y/N");
                                 if (Console.ReadLine().ToLower() == "y")
                                 {
                                     ShipInventory[itemsell] = Goods.Empty;
